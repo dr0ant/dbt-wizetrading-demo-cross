@@ -12507,3 +12507,2001 @@ with relation as (
 [0m09:57:55.572911 [debug] [MainThread]: Connection 'aoavfbel.information_schema' was properly closed.
 [0m09:57:55.573889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002285932E9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022859C38AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002285BB42BE0>]}
 [0m09:57:55.573889 [debug] [MainThread]: Flushing usage events
+[0m09:59:31.810613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A9F5629A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA1DF6430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA1DF6490>]}
+
+
+============================== 09:59:31.810613 | 42d30579-51ba-4140-af9b-c79d724a8c00 ==============================
+[0m09:59:31.810613 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:59:31.818756 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\alarcher\\.dbt', 'log_path': 'C:\\Users\\alarcher\\Documents\\dbt\\dbt_env\\dbt_wizetrading\\dbt-wizetrading-demo\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:59:32.030270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A9FE537F0>]}
+[0m09:59:32.115002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA1DD4700>]}
+[0m09:59:32.116003 [info ] [MainThread]: Registered adapter: postgres=1.7.11
+[0m09:59:32.124944 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m09:59:32.229437 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:59:32.229437 [debug] [MainThread]: Partial parsing: updated file: dbt_wizetrading://models\trading_perp_btc_data\schema.yml
+[0m09:59:32.250285 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_wizetrading.example
+[0m09:59:32.258421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA26967F0>]}
+[0m09:59:32.312198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA23A5D30>]}
+[0m09:59:32.312198 [info ] [MainThread]: Found 17 models, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m09:59:32.320268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA23C7190>]}
+[0m09:59:32.322059 [info ] [MainThread]: 
+[0m09:59:32.323060 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m09:59:32.326054 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aoavfbel'
+[0m09:59:32.336055 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel"
+[0m09:59:32.337054 [debug] [ThreadPool]: On list_aoavfbel: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "list_aoavfbel"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m09:59:32.337054 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:59:32.558551 [debug] [ThreadPool]: SQL status: SELECT 45 in 0.0 seconds
+[0m09:59:32.560708 [debug] [ThreadPool]: On list_aoavfbel: Close
+[0m09:59:32.563707 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aoavfbel_wizetrading'
+[0m09:59:32.568799 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel_wizetrading"
+[0m09:59:32.568799 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: BEGIN
+[0m09:59:32.569797 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:59:32.773564 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:32.773564 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel_wizetrading"
+[0m09:59:32.774563 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "list_aoavfbel_wizetrading"} */
+select
+      'aoavfbel' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'wizetrading'
+    union all
+    select
+      'aoavfbel' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'wizetrading'
+    union all
+    select
+      'aoavfbel' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'wizetrading'
+  
+[0m09:59:32.800042 [debug] [ThreadPool]: SQL status: SELECT 33 in 0.0 seconds
+[0m09:59:32.800042 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: ROLLBACK
+[0m09:59:32.820891 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: Close
+[0m09:59:32.841626 [debug] [MainThread]: Using postgres connection "master"
+[0m09:59:32.841626 [debug] [MainThread]: On master: BEGIN
+[0m09:59:32.841626 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:59:33.047678 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:33.047678 [debug] [MainThread]: Using postgres connection "master"
+[0m09:59:33.047678 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m09:59:33.086875 [debug] [MainThread]: SQL status: SELECT 47 in 0.0 seconds
+[0m09:59:33.089109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA25B5FD0>]}
+[0m09:59:33.089109 [debug] [MainThread]: On master: ROLLBACK
+[0m09:59:33.109921 [debug] [MainThread]: Using postgres connection "master"
+[0m09:59:33.109921 [debug] [MainThread]: On master: BEGIN
+[0m09:59:33.162348 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:33.162348 [debug] [MainThread]: On master: COMMIT
+[0m09:59:33.162348 [debug] [MainThread]: Using postgres connection "master"
+[0m09:59:33.163361 [debug] [MainThread]: On master: COMMIT
+[0m09:59:33.185582 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:33.186574 [debug] [MainThread]: On master: Close
+[0m09:59:33.187572 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:59:33.188498 [info ] [MainThread]: 
+[0m09:59:33.192918 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perptreated_data
+[0m09:59:33.200981 [info ] [Thread-1  ]: 1 of 17 START sql view model wizetrading.btc_perptreated_data .................. [RUN]
+[0m09:59:33.201083 [debug] [Thread-1  ]: Acquiring new postgres connection 'model.dbt_wizetrading.btc_perptreated_data'
+[0m09:59:33.201083 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perptreated_data
+[0m09:59:33.208740 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perptreated_data"
+[0m09:59:33.211282 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perptreated_data (compile): 09:59:33.201083 => 09:59:33.211282
+[0m09:59:33.211282 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perptreated_data
+[0m09:59:33.242296 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perptreated_data"
+[0m09:59:33.244385 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perptreated_data"
+[0m09:59:33.244385 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perptreated_data: BEGIN
+[0m09:59:33.244385 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m09:59:33.448162 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:33.448162 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perptreated_data"
+[0m09:59:33.449161 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perptreated_data: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perptreated_data"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perptreated_data__dbt_tmp"
+    
+    
+  as (
+    with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."raw_data"
+),
+final as 
+(
+   select
+       stream      :: varchar as stream
+       ,"data_e"   :: varchar as event_type
+       ,"data_E"   :: bigint as event_time
+       ,"data_s"   :: varchar as symbole_src
+       ,"data_k_t" :: bigint as candle_open_time
+       ,"data_k_T" :: bigint as candle_close_time
+       ,"data_k_s" :: varchar as symbole
+       ,"data_k_i" :: varchar as interval
+       ,"data_k_f" :: int as first_trade_id
+       ,"data_k_L" :: int as last_trade_id
+       ,"data_k_o" :: decimal as openprice
+       ,"data_k_c" :: decimal as close_price
+       ,"data_k_h" :: decimal as high_price
+       ,"data_k_l" :: decimal as low_price
+       ,"data_k_v" :: int as base_asset_volume
+       ,"data_k_n" :: int as  nb_trades
+       ,"data_k_x" :: boolean as candle_closed
+       ,"data_k_q" :: decimal as quote_asset_volume
+       ,"data_k_V" :: decimal as taker_buy_base_asset_volume
+       ,"data_k_Q" :: decimal as taker_buy_quote_asset_volume
+    from wizetrading.raw_data
+)
+select * from final
+  );
+[0m09:59:33.476342 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:33.484342 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perptreated_data"
+[0m09:59:33.484342 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perptreated_data: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perptreated_data"} */
+alter table "aoavfbel"."wizetrading"."btc_perptreated_data" rename to "btc_perptreated_data__dbt_backup"
+[0m09:59:33.509278 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:33.511336 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perptreated_data"
+[0m09:59:33.512351 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perptreated_data: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perptreated_data"} */
+alter table "aoavfbel"."wizetrading"."btc_perptreated_data__dbt_tmp" rename to "btc_perptreated_data"
+[0m09:59:33.530005 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:33.550678 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perptreated_data: COMMIT
+[0m09:59:33.550678 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perptreated_data"
+[0m09:59:33.550678 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perptreated_data: COMMIT
+[0m09:59:33.581739 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:33.592119 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perptreated_data__dbt_backup"
+[0m09:59:33.592119 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perptreated_data"
+[0m09:59:33.592119 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perptreated_data: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perptreated_data"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perptreated_data__dbt_backup" cascade
+[0m09:59:33.643847 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:33.643847 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perptreated_data (execute): 09:59:33.211282 => 09:59:33.643847
+[0m09:59:33.643847 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perptreated_data: Close
+[0m09:59:33.643847 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2816730>]}
+[0m09:59:33.652052 [info ] [Thread-1  ]: 1 of 17 OK created sql view model wizetrading.btc_perptreated_data ............. [[32mCREATE VIEW[0m in 0.44s]
+[0m09:59:33.652052 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perptreated_data
+[0m09:59:33.654236 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.raw_data_btc_perp
+[0m09:59:33.654236 [info ] [Thread-1  ]: 2 of 17 START sql view model wizetrading.raw_data_btc_perp ..................... [RUN]
+[0m09:59:33.654236 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perptreated_data, now model.dbt_wizetrading.raw_data_btc_perp)
+[0m09:59:33.654236 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.raw_data_btc_perp
+[0m09:59:33.654236 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.raw_data_btc_perp"
+[0m09:59:33.654236 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.raw_data_btc_perp (compile): 09:59:33.654236 => 09:59:33.654236
+[0m09:59:33.662329 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.raw_data_btc_perp
+[0m09:59:33.666016 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.raw_data_btc_perp"
+[0m09:59:33.668025 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.raw_data_btc_perp"
+[0m09:59:33.668025 [debug] [Thread-1  ]: On model.dbt_wizetrading.raw_data_btc_perp: BEGIN
+[0m09:59:33.669113 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:33.880671 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:33.880671 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.raw_data_btc_perp"
+[0m09:59:33.880671 [debug] [Thread-1  ]: On model.dbt_wizetrading.raw_data_btc_perp: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.raw_data_btc_perp"} */
+
+  create view "aoavfbel"."wizetrading"."raw_data_btc_perp__dbt_tmp"
+    
+    
+  as (
+    with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."raw_data"
+),
+final as (
+    select * from source_btc_data
+)
+
+select * from final
+  );
+[0m09:59:33.907656 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:33.911655 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.raw_data_btc_perp"
+[0m09:59:33.911655 [debug] [Thread-1  ]: On model.dbt_wizetrading.raw_data_btc_perp: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.raw_data_btc_perp"} */
+alter table "aoavfbel"."wizetrading"."raw_data_btc_perp" rename to "raw_data_btc_perp__dbt_backup"
+[0m09:59:33.928795 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:33.939093 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.raw_data_btc_perp"
+[0m09:59:33.939093 [debug] [Thread-1  ]: On model.dbt_wizetrading.raw_data_btc_perp: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.raw_data_btc_perp"} */
+alter table "aoavfbel"."wizetrading"."raw_data_btc_perp__dbt_tmp" rename to "raw_data_btc_perp"
+[0m09:59:33.959805 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:33.968005 [debug] [Thread-1  ]: On model.dbt_wizetrading.raw_data_btc_perp: COMMIT
+[0m09:59:33.968005 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.raw_data_btc_perp"
+[0m09:59:33.968005 [debug] [Thread-1  ]: On model.dbt_wizetrading.raw_data_btc_perp: COMMIT
+[0m09:59:33.990868 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:34.001206 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."raw_data_btc_perp__dbt_backup"
+[0m09:59:34.001206 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.raw_data_btc_perp"
+[0m09:59:34.001206 [debug] [Thread-1  ]: On model.dbt_wizetrading.raw_data_btc_perp: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.raw_data_btc_perp"} */
+drop view if exists "aoavfbel"."wizetrading"."raw_data_btc_perp__dbt_backup" cascade
+[0m09:59:34.033616 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:34.035620 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.raw_data_btc_perp (execute): 09:59:33.662329 => 09:59:34.035620
+[0m09:59:34.035620 [debug] [Thread-1  ]: On model.dbt_wizetrading.raw_data_btc_perp: Close
+[0m09:59:34.035620 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2686220>]}
+[0m09:59:34.037934 [info ] [Thread-1  ]: 2 of 17 OK created sql view model wizetrading.raw_data_btc_perp ................ [[32mCREATE VIEW[0m in 0.38s]
+[0m09:59:34.038702 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.raw_data_btc_perp
+[0m09:59:34.039210 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_15m
+[0m09:59:34.039709 [info ] [Thread-1  ]: 3 of 17 START sql view model wizetrading.btc_perp_data_15m ..................... [RUN]
+[0m09:59:34.040216 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.raw_data_btc_perp, now model.dbt_wizetrading.btc_perp_data_15m)
+[0m09:59:34.041550 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_15m
+[0m09:59:34.042077 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_15m"
+[0m09:59:34.042077 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m (compile): 09:59:34.041634 => 09:59:34.042077
+[0m09:59:34.042077 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_15m
+[0m09:59:34.049556 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_15m"
+[0m09:59:34.052871 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m"
+[0m09:59:34.052871 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m: BEGIN
+[0m09:59:34.053517 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:34.266397 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:34.266939 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m"
+[0m09:59:34.267454 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_15m__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+        and interval ='15m'
+)
+
+select * from final
+  );
+[0m09:59:34.294127 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:34.297134 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m"
+[0m09:59:34.298133 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_15m__dbt_tmp" rename to "btc_perp_data_15m"
+[0m09:59:34.318740 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:34.322616 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m: COMMIT
+[0m09:59:34.323230 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m"
+[0m09:59:34.323230 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m: COMMIT
+[0m09:59:34.350772 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:34.353032 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_15m__dbt_backup"
+[0m09:59:34.354032 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m"
+[0m09:59:34.355031 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_15m__dbt_backup" cascade
+[0m09:59:34.377084 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:34.379090 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m (execute): 09:59:34.042077 => 09:59:34.378094
+[0m09:59:34.379090 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m: Close
+[0m09:59:34.380092 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA275A3D0>]}
+[0m09:59:34.380092 [info ] [Thread-1  ]: 3 of 17 OK created sql view model wizetrading.btc_perp_data_15m ................ [[32mCREATE VIEW[0m in 0.34s]
+[0m09:59:34.381090 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_15m
+[0m09:59:34.382091 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_15m_history
+[0m09:59:34.382091 [info ] [Thread-1  ]: 4 of 17 START sql view model wizetrading.btc_perp_data_15m_history ............. [RUN]
+[0m09:59:34.383844 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_15m, now model.dbt_wizetrading.btc_perp_data_15m_history)
+[0m09:59:34.383907 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_15m_history
+[0m09:59:34.386914 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_15m_history"
+[0m09:59:34.387916 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m_history (compile): 09:59:34.383907 => 09:59:34.387916
+[0m09:59:34.387916 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_15m_history
+[0m09:59:34.392573 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_15m_history"
+[0m09:59:34.393571 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_history"
+[0m09:59:34.394572 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_history: BEGIN
+[0m09:59:34.394572 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:34.596952 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:34.596952 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_history"
+[0m09:59:34.596952 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_15m_history__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+         AND source_btc_data.interval::text = '15m'::text
+)
+
+select * from final
+  );
+[0m09:59:34.626044 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:34.626044 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_history"
+[0m09:59:34.626044 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_15m_history__dbt_tmp" rename to "btc_perp_data_15m_history"
+[0m09:59:34.646477 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:34.658673 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_history: COMMIT
+[0m09:59:34.658821 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_history"
+[0m09:59:34.658821 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_history: COMMIT
+[0m09:59:34.688442 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:34.689956 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_15m_history__dbt_backup"
+[0m09:59:34.691999 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_history"
+[0m09:59:34.691999 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_15m_history__dbt_backup" cascade
+[0m09:59:34.709674 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:34.709674 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m_history (execute): 09:59:34.388920 => 09:59:34.709674
+[0m09:59:34.709674 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_history: Close
+[0m09:59:34.709674 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2816730>]}
+[0m09:59:34.717726 [info ] [Thread-1  ]: 4 of 17 OK created sql view model wizetrading.btc_perp_data_15m_history ........ [[32mCREATE VIEW[0m in 0.33s]
+[0m09:59:34.717726 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_15m_history
+[0m09:59:34.719762 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1h
+[0m09:59:34.719762 [info ] [Thread-1  ]: 5 of 17 START sql view model wizetrading.btc_perp_data_1h ...................... [RUN]
+[0m09:59:34.719762 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_15m_history, now model.dbt_wizetrading.btc_perp_data_1h)
+[0m09:59:34.719762 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1h
+[0m09:59:34.719762 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1h"
+[0m09:59:34.719762 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h (compile): 09:59:34.719762 => 09:59:34.719762
+[0m09:59:34.719762 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1h
+[0m09:59:34.731004 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_1h"
+[0m09:59:34.733018 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h"
+[0m09:59:34.733018 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h: BEGIN
+[0m09:59:34.733018 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:34.934775 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:34.934775 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h"
+[0m09:59:34.934775 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_1h__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+        and interval ='1h'
+)
+
+select * from final
+  );
+[0m09:59:34.965845 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:34.976248 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h"
+[0m09:59:34.976248 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_1h__dbt_tmp" rename to "btc_perp_data_1h"
+[0m09:59:35.005154 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:35.007359 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h: COMMIT
+[0m09:59:35.007359 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h"
+[0m09:59:35.007359 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h: COMMIT
+[0m09:59:35.037319 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:35.037319 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_1h__dbt_backup"
+[0m09:59:35.045387 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h"
+[0m09:59:35.045387 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_1h__dbt_backup" cascade
+[0m09:59:35.078175 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:35.086379 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h (execute): 09:59:34.719762 => 09:59:35.086379
+[0m09:59:35.086379 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h: Close
+[0m09:59:35.086379 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2816730>]}
+[0m09:59:35.088588 [info ] [Thread-1  ]: 5 of 17 OK created sql view model wizetrading.btc_perp_data_1h ................. [[32mCREATE VIEW[0m in 0.37s]
+[0m09:59:35.088588 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1h
+[0m09:59:35.088588 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1h_history
+[0m09:59:35.088588 [info ] [Thread-1  ]: 6 of 17 START sql view model wizetrading.btc_perp_data_1h_history .............. [RUN]
+[0m09:59:35.088588 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1h, now model.dbt_wizetrading.btc_perp_data_1h_history)
+[0m09:59:35.088588 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1h_history
+[0m09:59:35.102185 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1h_history"
+[0m09:59:35.103637 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h_history (compile): 09:59:35.088588 => 09:59:35.103637
+[0m09:59:35.104665 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1h_history
+[0m09:59:35.108778 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_1h_history"
+[0m09:59:35.108778 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_history"
+[0m09:59:35.108778 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_history: BEGIN
+[0m09:59:35.108778 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:35.341542 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:35.343602 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_history"
+[0m09:59:35.343602 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_1h_history__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+         AND source_btc_data.interval::text = '1h'::text
+)
+
+select * from final
+  );
+[0m09:59:35.372210 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:35.374249 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_history"
+[0m09:59:35.374249 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_1h_history__dbt_tmp" rename to "btc_perp_data_1h_history"
+[0m09:59:35.394484 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:35.394484 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_history: COMMIT
+[0m09:59:35.394484 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_history"
+[0m09:59:35.394484 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_history: COMMIT
+[0m09:59:35.430606 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:35.433946 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_1h_history__dbt_backup"
+[0m09:59:35.433946 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_history"
+[0m09:59:35.433946 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_1h_history__dbt_backup" cascade
+[0m09:59:35.458264 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:35.458264 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h_history (execute): 09:59:35.104759 => 09:59:35.458264
+[0m09:59:35.458264 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_history: Close
+[0m09:59:35.458264 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA275A3D0>]}
+[0m09:59:35.458264 [info ] [Thread-1  ]: 6 of 17 OK created sql view model wizetrading.btc_perp_data_1h_history ......... [[32mCREATE VIEW[0m in 0.37s]
+[0m09:59:35.458264 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1h_history
+[0m09:59:35.458264 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1w
+[0m09:59:35.458264 [info ] [Thread-1  ]: 7 of 17 START sql view model wizetrading.btc_perp_data_1w ...................... [RUN]
+[0m09:59:35.464997 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1h_history, now model.dbt_wizetrading.btc_perp_data_1w)
+[0m09:59:35.464997 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1w
+[0m09:59:35.467201 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1w"
+[0m09:59:35.467201 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w (compile): 09:59:35.464997 => 09:59:35.467201
+[0m09:59:35.467201 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1w
+[0m09:59:35.475256 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_1w"
+[0m09:59:35.477330 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w"
+[0m09:59:35.477330 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w: BEGIN
+[0m09:59:35.477330 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:35.714324 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:35.715321 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w"
+[0m09:59:35.716316 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_1w__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+        and interval ='1w'
+)
+
+select * from final
+  );
+[0m09:59:35.743216 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:35.747473 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w"
+[0m09:59:35.747473 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_1w__dbt_tmp" rename to "btc_perp_data_1w"
+[0m09:59:35.763491 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:35.771743 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w: COMMIT
+[0m09:59:35.771743 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w"
+[0m09:59:35.773470 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w: COMMIT
+[0m09:59:35.794126 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:35.802175 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_1w__dbt_backup"
+[0m09:59:35.804217 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w"
+[0m09:59:35.804217 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_1w__dbt_backup" cascade
+[0m09:59:35.824515 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:35.824515 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w (execute): 09:59:35.467201 => 09:59:35.824515
+[0m09:59:35.824515 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w: Close
+[0m09:59:35.824515 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2606F40>]}
+[0m09:59:35.832584 [info ] [Thread-1  ]: 7 of 17 OK created sql view model wizetrading.btc_perp_data_1w ................. [[32mCREATE VIEW[0m in 0.36s]
+[0m09:59:35.832584 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1w
+[0m09:59:35.832584 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1w_history
+[0m09:59:35.834612 [info ] [Thread-1  ]: 8 of 17 START sql view model wizetrading.btc_perp_data_1w_history .............. [RUN]
+[0m09:59:35.834612 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1w, now model.dbt_wizetrading.btc_perp_data_1w_history)
+[0m09:59:35.834612 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1w_history
+[0m09:59:35.842214 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1w_history"
+[0m09:59:35.845213 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w_history (compile): 09:59:35.834612 => 09:59:35.844217
+[0m09:59:35.845213 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1w_history
+[0m09:59:35.851669 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_1w_history"
+[0m09:59:35.853865 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_history"
+[0m09:59:35.854868 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_history: BEGIN
+[0m09:59:35.855886 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:36.066096 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:36.067104 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_history"
+[0m09:59:36.068104 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_1w_history__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+         AND source_btc_data.interval::text = '1w'::text
+)
+
+select * from final
+  );
+[0m09:59:36.094895 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:36.098730 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_history"
+[0m09:59:36.098730 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_1w_history__dbt_tmp" rename to "btc_perp_data_1w_history"
+[0m09:59:36.121708 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:36.122716 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_history: COMMIT
+[0m09:59:36.123709 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_history"
+[0m09:59:36.123709 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_history: COMMIT
+[0m09:59:36.150502 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:36.154276 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_1w_history__dbt_backup"
+[0m09:59:36.155275 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_history"
+[0m09:59:36.155275 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_1w_history__dbt_backup" cascade
+[0m09:59:36.178903 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:36.179902 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w_history (execute): 09:59:35.846212 => 09:59:36.179902
+[0m09:59:36.180896 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_history: Close
+[0m09:59:36.181908 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2795F70>]}
+[0m09:59:36.182902 [info ] [Thread-1  ]: 8 of 17 OK created sql view model wizetrading.btc_perp_data_1w_history ......... [[32mCREATE VIEW[0m in 0.35s]
+[0m09:59:36.183897 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1w_history
+[0m09:59:36.183897 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_4h
+[0m09:59:36.184896 [info ] [Thread-1  ]: 9 of 17 START sql view model wizetrading.btc_perp_data_4h ...................... [RUN]
+[0m09:59:36.184896 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1w_history, now model.dbt_wizetrading.btc_perp_data_4h)
+[0m09:59:36.185902 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_4h
+[0m09:59:36.188902 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_4h"
+[0m09:59:36.190897 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h (compile): 09:59:36.185902 => 09:59:36.190897
+[0m09:59:36.191897 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_4h
+[0m09:59:36.195895 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_4h"
+[0m09:59:36.197905 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h"
+[0m09:59:36.198897 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h: BEGIN
+[0m09:59:36.198897 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:36.397053 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:36.397549 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h"
+[0m09:59:36.398046 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_4h__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+        and interval ='4h'
+)
+
+select * from final
+  );
+[0m09:59:36.424040 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:36.428022 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h"
+[0m09:59:36.428559 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_4h__dbt_tmp" rename to "btc_perp_data_4h"
+[0m09:59:36.452157 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:36.454324 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h: COMMIT
+[0m09:59:36.454857 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h"
+[0m09:59:36.455362 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h: COMMIT
+[0m09:59:36.481512 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:36.481512 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_4h__dbt_backup"
+[0m09:59:36.481512 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h"
+[0m09:59:36.481512 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_4h__dbt_backup" cascade
+[0m09:59:36.507997 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:36.507997 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h (execute): 09:59:36.191897 => 09:59:36.507997
+[0m09:59:36.507997 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h: Close
+[0m09:59:36.507997 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2793A60>]}
+[0m09:59:36.507997 [info ] [Thread-1  ]: 9 of 17 OK created sql view model wizetrading.btc_perp_data_4h ................. [[32mCREATE VIEW[0m in 0.32s]
+[0m09:59:36.507997 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_4h
+[0m09:59:36.507997 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_4h_history
+[0m09:59:36.507997 [info ] [Thread-1  ]: 10 of 17 START sql view model wizetrading.btc_perp_data_4h_history ............. [RUN]
+[0m09:59:36.507997 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_4h, now model.dbt_wizetrading.btc_perp_data_4h_history)
+[0m09:59:36.507997 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_4h_history
+[0m09:59:36.507997 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_4h_history"
+[0m09:59:36.507997 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h_history (compile): 09:59:36.507997 => 09:59:36.507997
+[0m09:59:36.507997 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_4h_history
+[0m09:59:36.524408 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_4h_history"
+[0m09:59:36.524408 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_history"
+[0m09:59:36.524408 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_history: BEGIN
+[0m09:59:36.524408 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:36.724669 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:36.724669 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_history"
+[0m09:59:36.724669 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_4h_history__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+         AND source_btc_data.interval::text = '4h'::text
+)
+
+select * from final
+  );
+[0m09:59:36.757900 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:36.757900 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_history"
+[0m09:59:36.757900 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_4h_history__dbt_tmp" rename to "btc_perp_data_4h_history"
+[0m09:59:36.774780 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:36.774780 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_history: COMMIT
+[0m09:59:36.774780 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_history"
+[0m09:59:36.774780 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_history: COMMIT
+[0m09:59:36.808094 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:36.824940 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_4h_history__dbt_backup"
+[0m09:59:36.824940 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_history"
+[0m09:59:36.824940 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_4h_history__dbt_backup" cascade
+[0m09:59:36.841469 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:36.841469 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h_history (execute): 09:59:36.507997 => 09:59:36.841469
+[0m09:59:36.841469 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_history: Close
+[0m09:59:36.857598 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA27C5DF0>]}
+[0m09:59:36.858164 [info ] [Thread-1  ]: 10 of 17 OK created sql view model wizetrading.btc_perp_data_4h_history ........ [[32mCREATE VIEW[0m in 0.35s]
+[0m09:59:36.858164 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_4h_history
+[0m09:59:36.858164 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_5m
+[0m09:59:36.858164 [info ] [Thread-1  ]: 11 of 17 START sql view model wizetrading.btc_perp_data_5m ..................... [RUN]
+[0m09:59:36.858164 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_4h_history, now model.dbt_wizetrading.btc_perp_data_5m)
+[0m09:59:36.858164 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_5m
+[0m09:59:36.858164 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_5m"
+[0m09:59:36.858164 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m (compile): 09:59:36.858164 => 09:59:36.858164
+[0m09:59:36.858164 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_5m
+[0m09:59:36.858164 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_5m"
+[0m09:59:36.858164 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m"
+[0m09:59:36.858164 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m: BEGIN
+[0m09:59:36.858164 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:37.067029 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:37.067029 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m"
+[0m09:59:37.067029 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_5m__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+        and interval ='5m'
+)
+
+select * from final
+  );
+[0m09:59:37.095597 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:37.095597 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m"
+[0m09:59:37.095597 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_5m__dbt_tmp" rename to "btc_perp_data_5m"
+[0m09:59:37.124585 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:37.126849 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m: COMMIT
+[0m09:59:37.126849 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m"
+[0m09:59:37.126849 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m: COMMIT
+[0m09:59:37.149774 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:37.160360 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_5m__dbt_backup"
+[0m09:59:37.160360 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m"
+[0m09:59:37.160360 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_5m__dbt_backup" cascade
+[0m09:59:37.181201 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:37.181201 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m (execute): 09:59:36.858164 => 09:59:37.181201
+[0m09:59:37.181201 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m: Close
+[0m09:59:37.189393 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA27E6E20>]}
+[0m09:59:37.191294 [info ] [Thread-1  ]: 11 of 17 OK created sql view model wizetrading.btc_perp_data_5m ................ [[32mCREATE VIEW[0m in 0.33s]
+[0m09:59:37.191799 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_5m
+[0m09:59:37.191799 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_5m_history
+[0m09:59:37.191799 [info ] [Thread-1  ]: 12 of 17 START sql view model wizetrading.btc_perp_data_5m_history ............. [RUN]
+[0m09:59:37.191799 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_5m, now model.dbt_wizetrading.btc_perp_data_5m_history)
+[0m09:59:37.191799 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_5m_history
+[0m09:59:37.191799 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_5m_history"
+[0m09:59:37.199564 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m_history (compile): 09:59:37.191799 => 09:59:37.199564
+[0m09:59:37.199564 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_5m_history
+[0m09:59:37.201750 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_5m_history"
+[0m09:59:37.201750 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_history"
+[0m09:59:37.201750 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_history: BEGIN
+[0m09:59:37.201750 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:37.399633 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:37.399633 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_history"
+[0m09:59:37.399633 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_5m_history__dbt_tmp"
+    
+    
+  as (
+    -- This is now a dbt model file, not a raw SQL query
+with source_btc_data as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perptreated_data"
+),
+final as (
+    select * from source_btc_data
+    where 1=1
+         AND source_btc_data.interval::text = '5m'::text
+)
+
+select * from final
+  );
+[0m09:59:37.429712 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:37.437950 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_history"
+[0m09:59:37.437950 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_5m_history__dbt_tmp" rename to "btc_perp_data_5m_history"
+[0m09:59:37.460829 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:37.460829 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_history: COMMIT
+[0m09:59:37.460829 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_history"
+[0m09:59:37.460829 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_history: COMMIT
+[0m09:59:37.489855 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:37.492050 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_5m_history__dbt_backup"
+[0m09:59:37.492050 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_history"
+[0m09:59:37.492050 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_5m_history__dbt_backup" cascade
+[0m09:59:37.512797 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:37.520984 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m_history (execute): 09:59:37.199564 => 09:59:37.520984
+[0m09:59:37.520984 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_history: Close
+[0m09:59:37.523192 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA27EED00>]}
+[0m09:59:37.523192 [info ] [Thread-1  ]: 12 of 17 OK created sql view model wizetrading.btc_perp_data_5m_history ........ [[32mCREATE VIEW[0m in 0.33s]
+[0m09:59:37.523192 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_5m_history
+[0m09:59:37.523192 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_15m_current_and_history
+[0m09:59:37.523192 [info ] [Thread-1  ]: 13 of 17 START sql view model wizetrading.btc_perp_data_15m_current_and_history  [RUN]
+[0m09:59:37.523192 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_5m_history, now model.dbt_wizetrading.btc_perp_data_15m_current_and_history)
+[0m09:59:37.523192 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_15m_current_and_history
+[0m09:59:37.531378 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"
+[0m09:59:37.533547 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m_current_and_history (compile): 09:59:37.523192 => 09:59:37.533547
+[0m09:59:37.533547 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_15m_current_and_history
+[0m09:59:37.533547 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"
+[0m09:59:37.533547 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"
+[0m09:59:37.533547 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_current_and_history: BEGIN
+[0m09:59:37.533547 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:37.738452 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:37.738452 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"
+[0m09:59:37.738452 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_15m_current_and_history__dbt_tmp"
+    
+    
+  as (
+    -- wizetrading.candle_15min_current_and_history source
+
+-- This is now a dbt model file, not a raw SQL query
+with 
+BTC_PERP_15m_btc_c as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_15m"
+)
+,
+BTC_PERP_15m_btc_h as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_15m_history"
+),
+BTC_PERP_15m_btc_c_treated as (
+    select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+    stream,
+    event_type,
+    event_time,
+    symbole_src,
+    candle_open_time,
+    candle_close_time,
+    symbole,
+    "interval",
+    first_trade_id,
+    last_trade_id,
+    openprice,
+    close_price,
+    high_price,
+    low_price,
+    base_asset_volume,
+    nb_trades,
+    candle_closed,
+    quote_asset_volume,
+    taker_buy_base_asset_volume,
+    taker_buy_quote_asset_volume
+    FROM BTC_PERP_15m_btc_c
+      WHERE candle_closed = false
+)
+,
+BTC_PERP_15m_btc_h_treated as (
+         select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+         stream,
+         event_type,
+         event_time,
+         symbole_src,
+         candle_open_time,
+         candle_close_time,
+         symbole,
+         "interval",
+         first_trade_id,
+         last_trade_id,
+         openprice,
+         close_price,
+         high_price,
+         low_price,
+         base_asset_volume,
+         nb_trades,
+         candle_closed,
+         quote_asset_volume,
+         taker_buy_base_asset_volume,
+         taker_buy_quote_asset_volume
+        FROM BTC_PERP_15m_btc_h
+)
+,
+pivot_curent AS (
+         select curr.formatted_datetime,
+         curr.stream,
+         curr.event_type,
+         curr.event_time,
+         curr.symbole_src,
+         curr.candle_open_time,
+         curr.candle_close_time,
+         curr.symbole,
+         curr."interval",
+         curr.first_trade_id,
+         curr.last_trade_id,
+         curr.openprice,
+         curr.close_price,
+         curr.high_price,
+         curr.low_price,
+         curr.base_asset_volume,
+         curr.nb_trades,
+         curr.candle_closed,
+         curr.quote_asset_volume,
+         curr.taker_buy_base_asset_volume,
+         curr.taker_buy_quote_asset_volume,
+         lag(hist.openprice, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_1,
+         lag(hist.openprice, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_2,
+         lag(hist.openprice, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_3,
+         lag(hist.openprice, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_4,
+         lag(hist.openprice, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_5,
+         lag(hist.openprice, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_6,
+         lag(hist.openprice, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_7,
+         lag(hist.openprice, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_8,
+         lag(hist.openprice, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_9,
+         lag(hist.openprice, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_10,
+         lag(hist.close_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_1,
+         lag(hist.close_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_2,
+         lag(hist.close_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_3,
+         lag(hist.close_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_4,
+         lag(hist.close_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_5,
+         lag(hist.close_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_6,
+         lag(hist.close_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_7,
+         lag(hist.close_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_8,
+         lag(hist.close_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_9,
+         lag(hist.close_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_10,
+         lag(hist.high_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_1,
+         lag(hist.high_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_2,
+         lag(hist.high_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_3,
+         lag(hist.high_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_4,
+         lag(hist.high_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_5,
+         lag(hist.high_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_6,
+         lag(hist.high_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_7,
+         lag(hist.high_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_8,
+         lag(hist.high_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_9,
+         lag(hist.high_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_10,
+         lag(hist.low_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_1,
+         lag(hist.low_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_2,
+         lag(hist.low_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_3,
+         lag(hist.low_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_4,
+         lag(hist.low_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_5,
+         lag(hist.low_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_6,
+         lag(hist.low_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_7,
+         lag(hist.low_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_8,
+         lag(hist.low_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_9,
+         lag(hist.low_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_10,
+         row_number() OVER (PARTITION BY curr.event_time ORDER BY hist.event_time DESC) AS rank
+           FROM BTC_PERP_15m_btc_c_treated curr
+             LEFT JOIN BTC_PERP_15m_btc_h_treated hist ON curr.event_time >= hist.event_time
+          ORDER BY curr.event_time
+)
+,
+final as 
+(
+    SELECT pivot_curent.formatted_datetime,
+    pivot_curent.stream,
+    pivot_curent.event_type,
+    pivot_curent.event_time,
+    pivot_curent.symbole_src,
+    pivot_curent.candle_open_time,
+    pivot_curent.candle_close_time,
+    pivot_curent.symbole,
+    pivot_curent."interval",
+    pivot_curent.first_trade_id,
+    pivot_curent.last_trade_id,
+    pivot_curent.openprice,
+    pivot_curent.close_price,
+    pivot_curent.high_price,
+    pivot_curent.low_price,
+    pivot_curent.base_asset_volume,
+    pivot_curent.nb_trades,
+    pivot_curent.candle_closed,
+    pivot_curent.quote_asset_volume,
+    pivot_curent.taker_buy_base_asset_volume,
+    pivot_curent.taker_buy_quote_asset_volume,
+    pivot_curent.openprice_lag_1,
+    pivot_curent.openprice_lag_2,
+    pivot_curent.openprice_lag_3,
+    pivot_curent.openprice_lag_4,
+    pivot_curent.openprice_lag_5,
+    pivot_curent.openprice_lag_6,
+    pivot_curent.openprice_lag_7,
+    pivot_curent.openprice_lag_8,
+    pivot_curent.openprice_lag_9,
+    pivot_curent.openprice_lag_10,
+    pivot_curent.close_price_lag_1,
+    pivot_curent.close_price_lag_2,
+    pivot_curent.close_price_lag_3,
+    pivot_curent.close_price_lag_4,
+    pivot_curent.close_price_lag_5,
+    pivot_curent.close_price_lag_6,
+    pivot_curent.close_price_lag_7,
+    pivot_curent.close_price_lag_8,
+    pivot_curent.close_price_lag_9,
+    pivot_curent.close_price_lag_10,
+    pivot_curent.high_price_lag_1,
+    pivot_curent.high_price_lag_2,
+    pivot_curent.high_price_lag_3,
+    pivot_curent.high_price_lag_4,
+    pivot_curent.high_price_lag_5,
+    pivot_curent.high_price_lag_6,
+    pivot_curent.high_price_lag_7,
+    pivot_curent.high_price_lag_8,
+    pivot_curent.high_price_lag_9,
+    pivot_curent.high_price_lag_10,
+    pivot_curent.low_price_lag_1,
+    pivot_curent.low_price_lag_2,
+    pivot_curent.low_price_lag_3,
+    pivot_curent.low_price_lag_4,
+    pivot_curent.low_price_lag_5,
+    pivot_curent.low_price_lag_6,
+    pivot_curent.low_price_lag_7,
+    pivot_curent.low_price_lag_8,
+    pivot_curent.low_price_lag_9,
+    pivot_curent.low_price_lag_10,
+    pivot_curent.rank
+   FROM pivot_curent
+  WHERE pivot_curent.rank = 1
+)
+select * from final
+  );
+[0m09:59:37.777809 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:37.780005 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"
+[0m09:59:37.780005 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_15m_current_and_history__dbt_tmp" rename to "btc_perp_data_15m_current_and_history"
+[0m09:59:37.800562 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:37.808777 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_current_and_history: COMMIT
+[0m09:59:37.810985 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"
+[0m09:59:37.810985 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_current_and_history: COMMIT
+[0m09:59:37.839717 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:37.841938 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_15m_current_and_history__dbt_backup"
+[0m09:59:37.841938 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"
+[0m09:59:37.841938 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_15m_current_and_history__dbt_backup" cascade
+[0m09:59:37.862655 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:37.870849 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m_current_and_history (execute): 09:59:37.533547 => 09:59:37.870849
+[0m09:59:37.870849 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_15m_current_and_history: Close
+[0m09:59:37.873047 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA27F4A90>]}
+[0m09:59:37.873047 [info ] [Thread-1  ]: 13 of 17 OK created sql view model wizetrading.btc_perp_data_15m_current_and_history  [[32mCREATE VIEW[0m in 0.35s]
+[0m09:59:37.873047 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_15m_current_and_history
+[0m09:59:37.873047 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1h_current_and_history
+[0m09:59:37.873047 [info ] [Thread-1  ]: 14 of 17 START sql view model wizetrading.btc_perp_data_1h_current_and_history . [RUN]
+[0m09:59:37.873047 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_15m_current_and_history, now model.dbt_wizetrading.btc_perp_data_1h_current_and_history)
+[0m09:59:37.873047 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1h_current_and_history
+[0m09:59:37.882489 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"
+[0m09:59:37.883847 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h_current_and_history (compile): 09:59:37.873047 => 09:59:37.883847
+[0m09:59:37.884860 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1h_current_and_history
+[0m09:59:37.885719 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"
+[0m09:59:37.891489 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"
+[0m09:59:37.892845 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_current_and_history: BEGIN
+[0m09:59:37.893366 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:38.083590 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:38.083590 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"
+[0m09:59:38.085680 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_1h_current_and_history__dbt_tmp"
+    
+    
+  as (
+    -- wizetrading.candle_1hour_current_and_history source
+
+-- This is now a dbt model file, not a raw SQL query
+with 
+BTC_PERP_1h_btc_c as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_1h"
+)
+,
+BTC_PERP_1h_btc_h as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_1h_history"
+),
+BTC_PERP_1h_btc_c_treated as (
+    select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+    stream,
+    event_type,
+    event_time,
+    symbole_src,
+    candle_open_time,
+    candle_close_time,
+    symbole,
+    "interval",
+    first_trade_id,
+    last_trade_id,
+    openprice,
+    close_price,
+    high_price,
+    low_price,
+    base_asset_volume,
+    nb_trades,
+    candle_closed,
+    quote_asset_volume,
+    taker_buy_base_asset_volume,
+    taker_buy_quote_asset_volume
+    FROM BTC_PERP_1h_btc_c
+      WHERE candle_closed = false
+)
+,
+BTC_PERP_1h_btc_h_treated as (
+         select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+         stream,
+         event_type,
+         event_time,
+         symbole_src,
+         candle_open_time,
+         candle_close_time,
+         symbole,
+         "interval",
+         first_trade_id,
+         last_trade_id,
+         openprice,
+         close_price,
+         high_price,
+         low_price,
+         base_asset_volume,
+         nb_trades,
+         candle_closed,
+         quote_asset_volume,
+         taker_buy_base_asset_volume,
+         taker_buy_quote_asset_volume
+        FROM BTC_PERP_1h_btc_h
+)
+,
+pivot_curent AS (
+         select curr.formatted_datetime,
+         curr.stream,
+         curr.event_type,
+         curr.event_time,
+         curr.symbole_src,
+         curr.candle_open_time,
+         curr.candle_close_time,
+         curr.symbole,
+         curr."interval",
+         curr.first_trade_id,
+         curr.last_trade_id,
+         curr.openprice,
+         curr.close_price,
+         curr.high_price,
+         curr.low_price,
+         curr.base_asset_volume,
+         curr.nb_trades,
+         curr.candle_closed,
+         curr.quote_asset_volume,
+         curr.taker_buy_base_asset_volume,
+         curr.taker_buy_quote_asset_volume,
+         lag(hist.openprice, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_1,
+         lag(hist.openprice, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_2,
+         lag(hist.openprice, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_3,
+         lag(hist.openprice, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_4,
+         lag(hist.openprice, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_5,
+         lag(hist.openprice, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_6,
+         lag(hist.openprice, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_7,
+         lag(hist.openprice, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_8,
+         lag(hist.openprice, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_9,
+         lag(hist.openprice, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_10,
+         lag(hist.close_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_1,
+         lag(hist.close_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_2,
+         lag(hist.close_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_3,
+         lag(hist.close_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_4,
+         lag(hist.close_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_5,
+         lag(hist.close_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_6,
+         lag(hist.close_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_7,
+         lag(hist.close_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_8,
+         lag(hist.close_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_9,
+         lag(hist.close_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_10,
+         lag(hist.high_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_1,
+         lag(hist.high_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_2,
+         lag(hist.high_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_3,
+         lag(hist.high_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_4,
+         lag(hist.high_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_5,
+         lag(hist.high_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_6,
+         lag(hist.high_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_7,
+         lag(hist.high_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_8,
+         lag(hist.high_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_9,
+         lag(hist.high_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_10,
+         lag(hist.low_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_1,
+         lag(hist.low_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_2,
+         lag(hist.low_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_3,
+         lag(hist.low_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_4,
+         lag(hist.low_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_5,
+         lag(hist.low_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_6,
+         lag(hist.low_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_7,
+         lag(hist.low_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_8,
+         lag(hist.low_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_9,
+         lag(hist.low_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_10,
+         row_number() OVER (PARTITION BY curr.event_time ORDER BY hist.event_time DESC) AS rank
+           FROM BTC_PERP_1h_btc_c_treated curr
+             LEFT JOIN BTC_PERP_1h_btc_h_treated hist ON curr.event_time >= hist.event_time
+          ORDER BY curr.event_time
+)
+,
+final as 
+(
+    SELECT pivot_curent.formatted_datetime,
+    pivot_curent.stream,
+    pivot_curent.event_type,
+    pivot_curent.event_time,
+    pivot_curent.symbole_src,
+    pivot_curent.candle_open_time,
+    pivot_curent.candle_close_time,
+    pivot_curent.symbole,
+    pivot_curent."interval",
+    pivot_curent.first_trade_id,
+    pivot_curent.last_trade_id,
+    pivot_curent.openprice,
+    pivot_curent.close_price,
+    pivot_curent.high_price,
+    pivot_curent.low_price,
+    pivot_curent.base_asset_volume,
+    pivot_curent.nb_trades,
+    pivot_curent.candle_closed,
+    pivot_curent.quote_asset_volume,
+    pivot_curent.taker_buy_base_asset_volume,
+    pivot_curent.taker_buy_quote_asset_volume,
+    pivot_curent.openprice_lag_1,
+    pivot_curent.openprice_lag_2,
+    pivot_curent.openprice_lag_3,
+    pivot_curent.openprice_lag_4,
+    pivot_curent.openprice_lag_5,
+    pivot_curent.openprice_lag_6,
+    pivot_curent.openprice_lag_7,
+    pivot_curent.openprice_lag_8,
+    pivot_curent.openprice_lag_9,
+    pivot_curent.openprice_lag_10,
+    pivot_curent.close_price_lag_1,
+    pivot_curent.close_price_lag_2,
+    pivot_curent.close_price_lag_3,
+    pivot_curent.close_price_lag_4,
+    pivot_curent.close_price_lag_5,
+    pivot_curent.close_price_lag_6,
+    pivot_curent.close_price_lag_7,
+    pivot_curent.close_price_lag_8,
+    pivot_curent.close_price_lag_9,
+    pivot_curent.close_price_lag_10,
+    pivot_curent.high_price_lag_1,
+    pivot_curent.high_price_lag_2,
+    pivot_curent.high_price_lag_3,
+    pivot_curent.high_price_lag_4,
+    pivot_curent.high_price_lag_5,
+    pivot_curent.high_price_lag_6,
+    pivot_curent.high_price_lag_7,
+    pivot_curent.high_price_lag_8,
+    pivot_curent.high_price_lag_9,
+    pivot_curent.high_price_lag_10,
+    pivot_curent.low_price_lag_1,
+    pivot_curent.low_price_lag_2,
+    pivot_curent.low_price_lag_3,
+    pivot_curent.low_price_lag_4,
+    pivot_curent.low_price_lag_5,
+    pivot_curent.low_price_lag_6,
+    pivot_curent.low_price_lag_7,
+    pivot_curent.low_price_lag_8,
+    pivot_curent.low_price_lag_9,
+    pivot_curent.low_price_lag_10,
+    pivot_curent.rank
+   FROM pivot_curent
+  WHERE pivot_curent.rank = 1
+)
+select * from final
+  );
+[0m09:59:38.116788 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:38.116788 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"
+[0m09:59:38.124856 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_1h_current_and_history__dbt_tmp" rename to "btc_perp_data_1h_current_and_history"
+[0m09:59:38.145606 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:38.147817 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_current_and_history: COMMIT
+[0m09:59:38.147817 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"
+[0m09:59:38.147817 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_current_and_history: COMMIT
+[0m09:59:38.178922 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:38.178922 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_1h_current_and_history__dbt_backup"
+[0m09:59:38.187021 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"
+[0m09:59:38.189209 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_1h_current_and_history__dbt_backup" cascade
+[0m09:59:38.209887 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:38.209887 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h_current_and_history (execute): 09:59:37.884860 => 09:59:38.209887
+[0m09:59:38.209887 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1h_current_and_history: Close
+[0m09:59:38.218084 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA27F4AC0>]}
+[0m09:59:38.218084 [info ] [Thread-1  ]: 14 of 17 OK created sql view model wizetrading.btc_perp_data_1h_current_and_history  [[32mCREATE VIEW[0m in 0.35s]
+[0m09:59:38.220284 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1h_current_and_history
+[0m09:59:38.220284 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1w_current_and_history
+[0m09:59:38.220284 [info ] [Thread-1  ]: 15 of 17 START sql view model wizetrading.btc_perp_data_1w_current_and_history . [RUN]
+[0m09:59:38.220284 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1h_current_and_history, now model.dbt_wizetrading.btc_perp_data_1w_current_and_history)
+[0m09:59:38.220284 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1w_current_and_history
+[0m09:59:38.220284 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"
+[0m09:59:38.228432 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w_current_and_history (compile): 09:59:38.220284 => 09:59:38.228432
+[0m09:59:38.229689 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1w_current_and_history
+[0m09:59:38.233168 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"
+[0m09:59:38.233168 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"
+[0m09:59:38.233168 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_current_and_history: BEGIN
+[0m09:59:38.233168 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:38.432905 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:38.432905 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"
+[0m09:59:38.435116 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_1w_current_and_history__dbt_tmp"
+    
+    
+  as (
+    -- wizetrading.candle_1week_current_and_history source
+
+-- This is now a dbt model file, not a raw SQL query
+with 
+BTC_PERP_1w_btc_c as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_1w"
+)
+,
+BTC_PERP_1w_btc_h as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_1w_history"
+),
+BTC_PERP_1w_btc_c_treated as (
+    select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+    stream,
+    event_type,
+    event_time,
+    symbole_src,
+    candle_open_time,
+    candle_close_time,
+    symbole,
+    "interval",
+    first_trade_id,
+    last_trade_id,
+    openprice,
+    close_price,
+    high_price,
+    low_price,
+    base_asset_volume,
+    nb_trades,
+    candle_closed,
+    quote_asset_volume,
+    taker_buy_base_asset_volume,
+    taker_buy_quote_asset_volume
+    FROM BTC_PERP_1w_btc_c
+      WHERE candle_closed = false
+)
+,
+BTC_PERP_1w_btc_h_treated as (
+         select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+         stream,
+         event_type,
+         event_time,
+         symbole_src,
+         candle_open_time,
+         candle_close_time,
+         symbole,
+         "interval",
+         first_trade_id,
+         last_trade_id,
+         openprice,
+         close_price,
+         high_price,
+         low_price,
+         base_asset_volume,
+         nb_trades,
+         candle_closed,
+         quote_asset_volume,
+         taker_buy_base_asset_volume,
+         taker_buy_quote_asset_volume
+        FROM BTC_PERP_1w_btc_h
+)
+,
+pivot_curent AS (
+         select curr.formatted_datetime,
+         curr.stream,
+         curr.event_type,
+         curr.event_time,
+         curr.symbole_src,
+         curr.candle_open_time,
+         curr.candle_close_time,
+         curr.symbole,
+         curr."interval",
+         curr.first_trade_id,
+         curr.last_trade_id,
+         curr.openprice,
+         curr.close_price,
+         curr.high_price,
+         curr.low_price,
+         curr.base_asset_volume,
+         curr.nb_trades,
+         curr.candle_closed,
+         curr.quote_asset_volume,
+         curr.taker_buy_base_asset_volume,
+         curr.taker_buy_quote_asset_volume,
+         lag(hist.openprice, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_1,
+         lag(hist.openprice, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_2,
+         lag(hist.openprice, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_3,
+         lag(hist.openprice, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_4,
+         lag(hist.openprice, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_5,
+         lag(hist.openprice, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_6,
+         lag(hist.openprice, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_7,
+         lag(hist.openprice, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_8,
+         lag(hist.openprice, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_9,
+         lag(hist.openprice, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_10,
+         lag(hist.close_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_1,
+         lag(hist.close_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_2,
+         lag(hist.close_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_3,
+         lag(hist.close_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_4,
+         lag(hist.close_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_5,
+         lag(hist.close_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_6,
+         lag(hist.close_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_7,
+         lag(hist.close_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_8,
+         lag(hist.close_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_9,
+         lag(hist.close_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_10,
+         lag(hist.high_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_1,
+         lag(hist.high_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_2,
+         lag(hist.high_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_3,
+         lag(hist.high_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_4,
+         lag(hist.high_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_5,
+         lag(hist.high_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_6,
+         lag(hist.high_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_7,
+         lag(hist.high_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_8,
+         lag(hist.high_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_9,
+         lag(hist.high_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_10,
+         lag(hist.low_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_1,
+         lag(hist.low_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_2,
+         lag(hist.low_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_3,
+         lag(hist.low_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_4,
+         lag(hist.low_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_5,
+         lag(hist.low_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_6,
+         lag(hist.low_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_7,
+         lag(hist.low_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_8,
+         lag(hist.low_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_9,
+         lag(hist.low_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_10,
+         row_number() OVER (PARTITION BY curr.event_time ORDER BY hist.event_time DESC) AS rank
+           FROM BTC_PERP_1w_btc_c_treated curr
+             LEFT JOIN BTC_PERP_1w_btc_h_treated hist ON curr.event_time >= hist.event_time
+          ORDER BY curr.event_time
+)
+,
+final as 
+(
+    SELECT pivot_curent.formatted_datetime,
+    pivot_curent.stream,
+    pivot_curent.event_type,
+    pivot_curent.event_time,
+    pivot_curent.symbole_src,
+    pivot_curent.candle_open_time,
+    pivot_curent.candle_close_time,
+    pivot_curent.symbole,
+    pivot_curent."interval",
+    pivot_curent.first_trade_id,
+    pivot_curent.last_trade_id,
+    pivot_curent.openprice,
+    pivot_curent.close_price,
+    pivot_curent.high_price,
+    pivot_curent.low_price,
+    pivot_curent.base_asset_volume,
+    pivot_curent.nb_trades,
+    pivot_curent.candle_closed,
+    pivot_curent.quote_asset_volume,
+    pivot_curent.taker_buy_base_asset_volume,
+    pivot_curent.taker_buy_quote_asset_volume,
+    pivot_curent.openprice_lag_1,
+    pivot_curent.openprice_lag_2,
+    pivot_curent.openprice_lag_3,
+    pivot_curent.openprice_lag_4,
+    pivot_curent.openprice_lag_5,
+    pivot_curent.openprice_lag_6,
+    pivot_curent.openprice_lag_7,
+    pivot_curent.openprice_lag_8,
+    pivot_curent.openprice_lag_9,
+    pivot_curent.openprice_lag_10,
+    pivot_curent.close_price_lag_1,
+    pivot_curent.close_price_lag_2,
+    pivot_curent.close_price_lag_3,
+    pivot_curent.close_price_lag_4,
+    pivot_curent.close_price_lag_5,
+    pivot_curent.close_price_lag_6,
+    pivot_curent.close_price_lag_7,
+    pivot_curent.close_price_lag_8,
+    pivot_curent.close_price_lag_9,
+    pivot_curent.close_price_lag_10,
+    pivot_curent.high_price_lag_1,
+    pivot_curent.high_price_lag_2,
+    pivot_curent.high_price_lag_3,
+    pivot_curent.high_price_lag_4,
+    pivot_curent.high_price_lag_5,
+    pivot_curent.high_price_lag_6,
+    pivot_curent.high_price_lag_7,
+    pivot_curent.high_price_lag_8,
+    pivot_curent.high_price_lag_9,
+    pivot_curent.high_price_lag_10,
+    pivot_curent.low_price_lag_1,
+    pivot_curent.low_price_lag_2,
+    pivot_curent.low_price_lag_3,
+    pivot_curent.low_price_lag_4,
+    pivot_curent.low_price_lag_5,
+    pivot_curent.low_price_lag_6,
+    pivot_curent.low_price_lag_7,
+    pivot_curent.low_price_lag_8,
+    pivot_curent.low_price_lag_9,
+    pivot_curent.low_price_lag_10,
+    pivot_curent.rank
+   FROM pivot_curent
+  WHERE pivot_curent.rank = 1
+)
+select * from final
+  );
+[0m09:59:38.464083 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:38.464083 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"
+[0m09:59:38.464083 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_1w_current_and_history__dbt_tmp" rename to "btc_perp_data_1w_current_and_history"
+[0m09:59:38.492218 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:38.492310 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_current_and_history: COMMIT
+[0m09:59:38.492310 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"
+[0m09:59:38.494324 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_current_and_history: COMMIT
+[0m09:59:38.522684 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:38.525323 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_1w_current_and_history__dbt_backup"
+[0m09:59:38.525323 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"
+[0m09:59:38.526866 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_1w_current_and_history__dbt_backup" cascade
+[0m09:59:38.547208 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:38.547208 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w_current_and_history (execute): 09:59:38.229689 => 09:59:38.547208
+[0m09:59:38.547208 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_1w_current_and_history: Close
+[0m09:59:38.551606 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA27F4A90>]}
+[0m09:59:38.552284 [info ] [Thread-1  ]: 15 of 17 OK created sql view model wizetrading.btc_perp_data_1w_current_and_history  [[32mCREATE VIEW[0m in 0.33s]
+[0m09:59:38.552980 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1w_current_and_history
+[0m09:59:38.553586 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_4h_current_and_history
+[0m09:59:38.554185 [info ] [Thread-1  ]: 16 of 17 START sql view model wizetrading.btc_perp_data_4h_current_and_history . [RUN]
+[0m09:59:38.554791 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1w_current_and_history, now model.dbt_wizetrading.btc_perp_data_4h_current_and_history)
+[0m09:59:38.554791 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_4h_current_and_history
+[0m09:59:38.558626 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"
+[0m09:59:38.560819 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h_current_and_history (compile): 09:59:38.555379 => 09:59:38.560296
+[0m09:59:38.561222 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_4h_current_and_history
+[0m09:59:38.566518 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"
+[0m09:59:38.568660 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"
+[0m09:59:38.569189 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_current_and_history: BEGIN
+[0m09:59:38.569734 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:38.793245 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:38.793245 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"
+[0m09:59:38.793245 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_4h_current_and_history__dbt_tmp"
+    
+    
+  as (
+    -- wizetrading.candle_4hour_current_and_history source
+
+-- This is now a dbt model file, not a raw SQL query
+with 
+BTC_PERP_4h_btc_c as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_4h"
+)
+,
+BTC_PERP_4h_btc_h as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_4h_history"
+),
+BTC_PERP_4h_btc_c_treated as (
+    select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+    stream,
+    event_type,
+    event_time,
+    symbole_src,
+    candle_open_time,
+    candle_close_time,
+    symbole,
+    "interval",
+    first_trade_id,
+    last_trade_id,
+    openprice,
+    close_price,
+    high_price,
+    low_price,
+    base_asset_volume,
+    nb_trades,
+    candle_closed,
+    quote_asset_volume,
+    taker_buy_base_asset_volume,
+    taker_buy_quote_asset_volume
+    FROM BTC_PERP_4h_btc_c
+      WHERE candle_closed = false
+)
+,
+BTC_PERP_4h_btc_h_treated as (
+         select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+         stream,
+         event_type,
+         event_time,
+         symbole_src,
+         candle_open_time,
+         candle_close_time,
+         symbole,
+         "interval",
+         first_trade_id,
+         last_trade_id,
+         openprice,
+         close_price,
+         high_price,
+         low_price,
+         base_asset_volume,
+         nb_trades,
+         candle_closed,
+         quote_asset_volume,
+         taker_buy_base_asset_volume,
+         taker_buy_quote_asset_volume
+        FROM BTC_PERP_4h_btc_h
+)
+,
+pivot_curent AS (
+         select curr.formatted_datetime,
+         curr.stream,
+         curr.event_type,
+         curr.event_time,
+         curr.symbole_src,
+         curr.candle_open_time,
+         curr.candle_close_time,
+         curr.symbole,
+         curr."interval",
+         curr.first_trade_id,
+         curr.last_trade_id,
+         curr.openprice,
+         curr.close_price,
+         curr.high_price,
+         curr.low_price,
+         curr.base_asset_volume,
+         curr.nb_trades,
+         curr.candle_closed,
+         curr.quote_asset_volume,
+         curr.taker_buy_base_asset_volume,
+         curr.taker_buy_quote_asset_volume,
+         lag(hist.openprice, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_1,
+         lag(hist.openprice, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_2,
+         lag(hist.openprice, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_3,
+         lag(hist.openprice, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_4,
+         lag(hist.openprice, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_5,
+         lag(hist.openprice, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_6,
+         lag(hist.openprice, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_7,
+         lag(hist.openprice, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_8,
+         lag(hist.openprice, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_9,
+         lag(hist.openprice, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_10,
+         lag(hist.close_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_1,
+         lag(hist.close_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_2,
+         lag(hist.close_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_3,
+         lag(hist.close_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_4,
+         lag(hist.close_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_5,
+         lag(hist.close_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_6,
+         lag(hist.close_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_7,
+         lag(hist.close_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_8,
+         lag(hist.close_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_9,
+         lag(hist.close_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_10,
+         lag(hist.high_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_1,
+         lag(hist.high_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_2,
+         lag(hist.high_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_3,
+         lag(hist.high_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_4,
+         lag(hist.high_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_5,
+         lag(hist.high_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_6,
+         lag(hist.high_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_7,
+         lag(hist.high_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_8,
+         lag(hist.high_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_9,
+         lag(hist.high_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_10,
+         lag(hist.low_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_1,
+         lag(hist.low_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_2,
+         lag(hist.low_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_3,
+         lag(hist.low_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_4,
+         lag(hist.low_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_5,
+         lag(hist.low_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_6,
+         lag(hist.low_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_7,
+         lag(hist.low_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_8,
+         lag(hist.low_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_9,
+         lag(hist.low_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_10,
+         row_number() OVER (PARTITION BY curr.event_time ORDER BY hist.event_time DESC) AS rank
+           FROM BTC_PERP_4h_btc_c_treated curr
+             LEFT JOIN BTC_PERP_4h_btc_h_treated hist ON curr.event_time >= hist.event_time
+          ORDER BY curr.event_time
+)
+,
+final as 
+(
+    SELECT pivot_curent.formatted_datetime,
+    pivot_curent.stream,
+    pivot_curent.event_type,
+    pivot_curent.event_time,
+    pivot_curent.symbole_src,
+    pivot_curent.candle_open_time,
+    pivot_curent.candle_close_time,
+    pivot_curent.symbole,
+    pivot_curent."interval",
+    pivot_curent.first_trade_id,
+    pivot_curent.last_trade_id,
+    pivot_curent.openprice,
+    pivot_curent.close_price,
+    pivot_curent.high_price,
+    pivot_curent.low_price,
+    pivot_curent.base_asset_volume,
+    pivot_curent.nb_trades,
+    pivot_curent.candle_closed,
+    pivot_curent.quote_asset_volume,
+    pivot_curent.taker_buy_base_asset_volume,
+    pivot_curent.taker_buy_quote_asset_volume,
+    pivot_curent.openprice_lag_1,
+    pivot_curent.openprice_lag_2,
+    pivot_curent.openprice_lag_3,
+    pivot_curent.openprice_lag_4,
+    pivot_curent.openprice_lag_5,
+    pivot_curent.openprice_lag_6,
+    pivot_curent.openprice_lag_7,
+    pivot_curent.openprice_lag_8,
+    pivot_curent.openprice_lag_9,
+    pivot_curent.openprice_lag_10,
+    pivot_curent.close_price_lag_1,
+    pivot_curent.close_price_lag_2,
+    pivot_curent.close_price_lag_3,
+    pivot_curent.close_price_lag_4,
+    pivot_curent.close_price_lag_5,
+    pivot_curent.close_price_lag_6,
+    pivot_curent.close_price_lag_7,
+    pivot_curent.close_price_lag_8,
+    pivot_curent.close_price_lag_9,
+    pivot_curent.close_price_lag_10,
+    pivot_curent.high_price_lag_1,
+    pivot_curent.high_price_lag_2,
+    pivot_curent.high_price_lag_3,
+    pivot_curent.high_price_lag_4,
+    pivot_curent.high_price_lag_5,
+    pivot_curent.high_price_lag_6,
+    pivot_curent.high_price_lag_7,
+    pivot_curent.high_price_lag_8,
+    pivot_curent.high_price_lag_9,
+    pivot_curent.high_price_lag_10,
+    pivot_curent.low_price_lag_1,
+    pivot_curent.low_price_lag_2,
+    pivot_curent.low_price_lag_3,
+    pivot_curent.low_price_lag_4,
+    pivot_curent.low_price_lag_5,
+    pivot_curent.low_price_lag_6,
+    pivot_curent.low_price_lag_7,
+    pivot_curent.low_price_lag_8,
+    pivot_curent.low_price_lag_9,
+    pivot_curent.low_price_lag_10,
+    pivot_curent.rank
+   FROM pivot_curent
+  WHERE pivot_curent.rank = 1
+)
+select * from final
+  );
+[0m09:59:38.824507 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:38.834909 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"
+[0m09:59:38.834909 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_4h_current_and_history__dbt_tmp" rename to "btc_perp_data_4h_current_and_history"
+[0m09:59:38.855671 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:38.855671 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_current_and_history: COMMIT
+[0m09:59:38.863841 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"
+[0m09:59:38.863841 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_current_and_history: COMMIT
+[0m09:59:38.886863 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:38.897352 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_4h_current_and_history__dbt_backup"
+[0m09:59:38.897352 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"
+[0m09:59:38.897352 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_4h_current_and_history__dbt_backup" cascade
+[0m09:59:38.918090 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:38.918090 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h_current_and_history (execute): 09:59:38.561222 => 09:59:38.918090
+[0m09:59:38.918090 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_4h_current_and_history: Close
+[0m09:59:38.918090 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA26FBEE0>]}
+[0m09:59:38.918090 [info ] [Thread-1  ]: 16 of 17 OK created sql view model wizetrading.btc_perp_data_4h_current_and_history  [[32mCREATE VIEW[0m in 0.36s]
+[0m09:59:38.926206 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_4h_current_and_history
+[0m09:59:38.926206 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_5m_current_and_history
+[0m09:59:38.928422 [info ] [Thread-1  ]: 17 of 17 START sql view model wizetrading.btc_perp_data_5m_current_and_history . [RUN]
+[0m09:59:38.928422 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_4h_current_and_history, now model.dbt_wizetrading.btc_perp_data_5m_current_and_history)
+[0m09:59:38.928422 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_5m_current_and_history
+[0m09:59:38.928422 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"
+[0m09:59:38.928422 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m_current_and_history (compile): 09:59:38.928422 => 09:59:38.928422
+[0m09:59:38.928422 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_5m_current_and_history
+[0m09:59:38.938777 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"
+[0m09:59:38.938777 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"
+[0m09:59:38.938777 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_current_and_history: BEGIN
+[0m09:59:38.938777 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m09:59:39.152583 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:39.154780 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"
+[0m09:59:39.154780 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"} */
+
+  create view "aoavfbel"."wizetrading"."btc_perp_data_5m_current_and_history__dbt_tmp"
+    
+    
+  as (
+    -- wizetrading.candle_5min_current_and_history source
+
+-- This is now a dbt model file, not a raw SQL query
+with 
+BTC_PERP_5m_btc_c as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_5m"
+)
+,
+BTC_PERP_5m_btc_h as
+(
+    select * from "aoavfbel"."wizetrading"."btc_perp_data_5m_history"
+),
+BTC_PERP_5m_btc_c_treated as (
+    select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+    stream,
+    event_type,
+    event_time,
+    symbole_src,
+    candle_open_time,
+    candle_close_time,
+    symbole,
+    "interval",
+    first_trade_id,
+    last_trade_id,
+    openprice,
+    close_price,
+    high_price,
+    low_price,
+    base_asset_volume,
+    nb_trades,
+    candle_closed,
+    quote_asset_volume,
+    taker_buy_base_asset_volume,
+    taker_buy_quote_asset_volume
+    FROM BTC_PERP_5m_btc_c
+      WHERE candle_closed = false
+)
+,
+BTC_PERP_5m_btc_h_treated as (
+         select to_char(to_timestamp((event_time / 1000)::double precision), 'YYYY-MM-DD HH24:MI:SS'::text) AS formatted_datetime,
+         stream,
+         event_type,
+         event_time,
+         symbole_src,
+         candle_open_time,
+         candle_close_time,
+         symbole,
+         "interval",
+         first_trade_id,
+         last_trade_id,
+         openprice,
+         close_price,
+         high_price,
+         low_price,
+         base_asset_volume,
+         nb_trades,
+         candle_closed,
+         quote_asset_volume,
+         taker_buy_base_asset_volume,
+         taker_buy_quote_asset_volume
+        FROM BTC_PERP_5m_btc_h
+)
+,
+pivot_curent AS (
+         select curr.formatted_datetime,
+         curr.stream,
+         curr.event_type,
+         curr.event_time,
+         curr.symbole_src,
+         curr.candle_open_time,
+         curr.candle_close_time,
+         curr.symbole,
+         curr."interval",
+         curr.first_trade_id,
+         curr.last_trade_id,
+         curr.openprice,
+         curr.close_price,
+         curr.high_price,
+         curr.low_price,
+         curr.base_asset_volume,
+         curr.nb_trades,
+         curr.candle_closed,
+         curr.quote_asset_volume,
+         curr.taker_buy_base_asset_volume,
+         curr.taker_buy_quote_asset_volume,
+         lag(hist.openprice, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_1,
+         lag(hist.openprice, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_2,
+         lag(hist.openprice, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_3,
+         lag(hist.openprice, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_4,
+         lag(hist.openprice, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_5,
+         lag(hist.openprice, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_6,
+         lag(hist.openprice, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_7,
+         lag(hist.openprice, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_8,
+         lag(hist.openprice, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_9,
+         lag(hist.openprice, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS openprice_lag_10,
+         lag(hist.close_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_1,
+         lag(hist.close_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_2,
+         lag(hist.close_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_3,
+         lag(hist.close_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_4,
+         lag(hist.close_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_5,
+         lag(hist.close_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_6,
+         lag(hist.close_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_7,
+         lag(hist.close_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_8,
+         lag(hist.close_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_9,
+         lag(hist.close_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS close_price_lag_10,
+         lag(hist.high_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_1,
+         lag(hist.high_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_2,
+         lag(hist.high_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_3,
+         lag(hist.high_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_4,
+         lag(hist.high_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_5,
+         lag(hist.high_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_6,
+         lag(hist.high_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_7,
+         lag(hist.high_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_8,
+         lag(hist.high_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_9,
+         lag(hist.high_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS high_price_lag_10,
+         lag(hist.low_price, 1) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_1,
+         lag(hist.low_price, 2) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_2,
+         lag(hist.low_price, 3) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_3,
+         lag(hist.low_price, 4) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_4,
+         lag(hist.low_price, 5) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_5,
+         lag(hist.low_price, 6) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_6,
+         lag(hist.low_price, 7) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_7,
+         lag(hist.low_price, 8) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_8,
+         lag(hist.low_price, 9) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_9,
+         lag(hist.low_price, 10) OVER (PARTITION BY curr.event_time ORDER BY hist.event_time) AS low_price_lag_10,
+         row_number() OVER (PARTITION BY curr.event_time ORDER BY hist.event_time DESC) AS rank
+           FROM BTC_PERP_5m_btc_c_treated curr
+             LEFT JOIN BTC_PERP_5m_btc_h_treated hist ON curr.event_time >= hist.event_time
+          ORDER BY curr.event_time
+)
+,
+final as 
+(
+    SELECT pivot_curent.formatted_datetime,
+    pivot_curent.stream,
+    pivot_curent.event_type,
+    pivot_curent.event_time,
+    pivot_curent.symbole_src,
+    pivot_curent.candle_open_time,
+    pivot_curent.candle_close_time,
+    pivot_curent.symbole,
+    pivot_curent."interval",
+    pivot_curent.first_trade_id,
+    pivot_curent.last_trade_id,
+    pivot_curent.openprice,
+    pivot_curent.close_price,
+    pivot_curent.high_price,
+    pivot_curent.low_price,
+    pivot_curent.base_asset_volume,
+    pivot_curent.nb_trades,
+    pivot_curent.candle_closed,
+    pivot_curent.quote_asset_volume,
+    pivot_curent.taker_buy_base_asset_volume,
+    pivot_curent.taker_buy_quote_asset_volume,
+    pivot_curent.openprice_lag_1,
+    pivot_curent.openprice_lag_2,
+    pivot_curent.openprice_lag_3,
+    pivot_curent.openprice_lag_4,
+    pivot_curent.openprice_lag_5,
+    pivot_curent.openprice_lag_6,
+    pivot_curent.openprice_lag_7,
+    pivot_curent.openprice_lag_8,
+    pivot_curent.openprice_lag_9,
+    pivot_curent.openprice_lag_10,
+    pivot_curent.close_price_lag_1,
+    pivot_curent.close_price_lag_2,
+    pivot_curent.close_price_lag_3,
+    pivot_curent.close_price_lag_4,
+    pivot_curent.close_price_lag_5,
+    pivot_curent.close_price_lag_6,
+    pivot_curent.close_price_lag_7,
+    pivot_curent.close_price_lag_8,
+    pivot_curent.close_price_lag_9,
+    pivot_curent.close_price_lag_10,
+    pivot_curent.high_price_lag_1,
+    pivot_curent.high_price_lag_2,
+    pivot_curent.high_price_lag_3,
+    pivot_curent.high_price_lag_4,
+    pivot_curent.high_price_lag_5,
+    pivot_curent.high_price_lag_6,
+    pivot_curent.high_price_lag_7,
+    pivot_curent.high_price_lag_8,
+    pivot_curent.high_price_lag_9,
+    pivot_curent.high_price_lag_10,
+    pivot_curent.low_price_lag_1,
+    pivot_curent.low_price_lag_2,
+    pivot_curent.low_price_lag_3,
+    pivot_curent.low_price_lag_4,
+    pivot_curent.low_price_lag_5,
+    pivot_curent.low_price_lag_6,
+    pivot_curent.low_price_lag_7,
+    pivot_curent.low_price_lag_8,
+    pivot_curent.low_price_lag_9,
+    pivot_curent.low_price_lag_10,
+    pivot_curent.rank
+   FROM pivot_curent
+  WHERE pivot_curent.rank = 1
+)
+select * from final
+  );
+[0m09:59:39.185773 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m09:59:39.196316 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"
+[0m09:59:39.196316 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"} */
+alter table "aoavfbel"."wizetrading"."btc_perp_data_5m_current_and_history__dbt_tmp" rename to "btc_perp_data_5m_current_and_history"
+[0m09:59:39.217101 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m09:59:39.217101 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_current_and_history: COMMIT
+[0m09:59:39.217101 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"
+[0m09:59:39.225212 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_current_and_history: COMMIT
+[0m09:59:39.248169 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:39.248169 [debug] [Thread-1  ]: Applying DROP to: "aoavfbel"."wizetrading"."btc_perp_data_5m_current_and_history__dbt_backup"
+[0m09:59:39.256393 [debug] [Thread-1  ]: Using postgres connection "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"
+[0m09:59:39.256393 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_current_and_history: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"} */
+drop view if exists "aoavfbel"."wizetrading"."btc_perp_data_5m_current_and_history__dbt_backup" cascade
+[0m09:59:39.276963 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m09:59:39.279180 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m_current_and_history (execute): 09:59:38.928422 => 09:59:39.279180
+[0m09:59:39.279180 [debug] [Thread-1  ]: On model.dbt_wizetrading.btc_perp_data_5m_current_and_history: Close
+[0m09:59:39.279180 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d30579-51ba-4140-af9b-c79d724a8c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2878850>]}
+[0m09:59:39.279180 [info ] [Thread-1  ]: 17 of 17 OK created sql view model wizetrading.btc_perp_data_5m_current_and_history  [[32mCREATE VIEW[0m in 0.35s]
+[0m09:59:39.279180 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_5m_current_and_history
+[0m09:59:39.279180 [debug] [MainThread]: Using postgres connection "master"
+[0m09:59:39.287214 [debug] [MainThread]: On master: BEGIN
+[0m09:59:39.287214 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:59:39.467061 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m09:59:39.467061 [debug] [MainThread]: On master: COMMIT
+[0m09:59:39.467061 [debug] [MainThread]: Using postgres connection "master"
+[0m09:59:39.467061 [debug] [MainThread]: On master: COMMIT
+[0m09:59:39.487783 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m09:59:39.495974 [debug] [MainThread]: On master: Close
+[0m09:59:39.495974 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:59:39.498170 [debug] [MainThread]: Connection 'list_aoavfbel' was properly closed.
+[0m09:59:39.498170 [debug] [MainThread]: Connection 'list_aoavfbel_wizetrading' was properly closed.
+[0m09:59:39.498170 [debug] [MainThread]: Connection 'model.dbt_wizetrading.btc_perp_data_5m_current_and_history' was properly closed.
+[0m09:59:39.498170 [info ] [MainThread]: 
+[0m09:59:39.498170 [info ] [MainThread]: Finished running 17 view models in 0 hours 0 minutes and 7.18 seconds (7.18s).
+[0m09:59:39.506264 [debug] [MainThread]: Command end result
+[0m09:59:39.518507 [info ] [MainThread]: 
+[0m09:59:39.518507 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:59:39.518507 [info ] [MainThread]: 
+[0m09:59:39.518507 [info ] [MainThread]: Done. PASS=17 WARN=0 ERROR=0 SKIP=0 TOTAL=17
+[0m09:59:39.518507 [debug] [MainThread]: Command `dbt run` succeeded at 09:59:39.518507 after 7.76 seconds
+[0m09:59:39.518507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A9F5629A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA28166D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AA2816700>]}
+[0m09:59:39.526070 [debug] [MainThread]: Flushing usage events
