@@ -1,0 +1,620 @@
+version: 2
+
+sources:
+  - name: raw_data_btc_perp
+    description: "btc data captured from broker"
+    database: aoavfbel
+    schema: wizetrading
+    tables:
+      - name: 'raw_data'
+        description: "data collectée depuis binance"
+
+models:
+  - name: btc_perptreated_data
+    description: "traitement des types de données de la table RAW"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_15m
+    description: "Filtered btc_perptreated_data for 15-minute interval"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_1d
+    description: "Filtered btc_perptreated_data for 1-day interval"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_4h
+    description: "Filtered btc_perptreated_data for 4-hour interval"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_15m
+    description: "Filtered btc_perptreated_data for 15-minute interval"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_1h
+    description: "Filtered btc_perptreated_data for 1-hour interval"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_1w
+    description: "Filtered btc_perptreated_data for 1-week interval"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_5m
+    description: "Filtered btc_perptreated_data for 5-minute interval"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_4h_history
+    description: "Filtered btc_perptreated_data for 4-hour interval historical data"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_15m_history
+    description: "Filtered btc_perptreated_data for 15-minute interval historical data"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_1h_history
+    description: "Filtered btc_perptreated_data for 1-hour interval historical data"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_1w_history
+    description: "Filtered btc_perptreated_data for 1-week interval historical data"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_5m_history
+    description: "Filtered btc_perptreated_data for 5-minute interval historical data"
+    materialized: table
+    columns:
+      - name: stream
+        description: "Nom du stream spécifique"
+      - name: event_type
+        description: "type d evenement, peut être kline, closeline etc"
+      - name: event_time
+        description: "timestamp unix"
+      - name: symbole_src
+        description: "symbole de lasset"
+      - name: candle_open_time
+        description: "unix timestamp de lasset à louverture de la bougie du stream"
+      - name: candle_close_time
+        description: "unix timestamp de lasset à la cloture de la bougie du stream"
+      - name: symbole
+        description: "symbole traité"
+      - name: interval
+        description: "unité de mesure de la bougie"
+      - name: first_trade_id
+        description: "id du premier trade de la bougie"
+      - name: last_trade_id
+        description: "id du dernier trade de la bougie"
+      - name: openprice
+        description: "prix de lasset à louverture de la bouhie du stream"
+      - name: close_price
+        description: "prix de lasset à la cloture de la bouhie du stream"
+      - name: high_price
+        description: "prix le plus elevé de la bougie"
+      - name: low_price
+        description: "prix le plus bas de la bougie"
+      - name: base_asset_volume
+        description: "volume de trading sur lasset sur la bougie"
+      - name: nb_trades
+        description: "nombre de trade sur la bougie"
+      - name: candle_closed
+        description: "boulean precisant si la bougie est terminée"
+      - name: quote_asset_volume
+        description: "volume final en asset"
+      - name: taker_buy_base_asset_volume
+        description: "volume acheteurntaker"
+      - name: maker_buy_quote_asset_volume
+        description: "volume acheteur maker"
+
+  - name: btc_perp_data_5m_current_and_history
+    description: "Final table for the 5m interval with lags"
+    materialized: table
+
+
+  - name: btc_perp_data_15m_current_and_history
+    description: "Final table for the 5m interval with lags"
+    materialized: table
+
+  - name: btc_perp_data_1h_current_and_history
+    description: "Final table for the 5m interval with lags"
+    materialized: table
+
+
+  - name: btc_perp_data_4h_current_and_history
+    description: "Final table for the 5m interval with lags"
+    materialized: table
+
+  - name: btc_perp_data_1w_current_and_history
+    description: "Final table for the 5m interval with lags"
+    materialized: table
+
+
