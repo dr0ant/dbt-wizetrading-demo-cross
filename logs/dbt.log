@@ -29950,3 +29950,1051 @@ having count(*) > 1
 [0m15:58:49.807375 [debug] [MainThread]: Command `dbt test` failed at 15:58:49.807375 after 2.61 seconds
 [0m15:58:49.808375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021981E319A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021984C3F610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021984CA4E50>]}
 [0m15:58:49.808375 [debug] [MainThread]: Flushing usage events
+[0m16:30:58.066166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FAFDCAEA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FA80759520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FA80759580>]}
+
+
+============================== 16:30:58.071514 | b630d5b0-6b60-4d9c-8e70-c9133f24cc8b ==============================
+[0m16:30:58.071514 [info ] [MainThread]: Running with dbt=1.7.11
+[0m16:30:58.073073 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alarcher\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alarcher\\Documents\\dbt\\dbt_env\\dbt_wizetrading\\dbt-wizetrading-demo\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:30:58.277526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b630d5b0-6b60-4d9c-8e70-c9133f24cc8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FAFE5B1160>]}
+[0m16:30:58.355903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b630d5b0-6b60-4d9c-8e70-c9133f24cc8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FA8075D7F0>]}
+[0m16:30:58.356905 [info ] [MainThread]: Registered adapter: postgres=1.7.11
+[0m16:30:58.364904 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m16:30:58.396294 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading dbt_wizetrading: trading_perp_btc_data\schema.yml - Runtime Error
+    Syntax error near line 68
+    ------------------------------
+    65 |          - unique
+    66 |          - not null
+    67 |          - name: "accepted values"
+    68 |           args:
+    69 |             values: 
+    70 |               - btcusd_perp@kline_4h
+    71 |               - btcusd_perp@kline_5m
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block collection
+      in "<unicode string>", line 65, column 10
+    did not find expected '-' indicator
+      in "<unicode string>", line 68, column 11
+[0m16:30:58.398941 [debug] [MainThread]: Command `dbt test` failed at 16:30:58.398941 after 0.37 seconds
+[0m16:30:58.399441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FAFDCAEA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FA80BF8490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FA80BF84C0>]}
+[0m16:30:58.399441 [debug] [MainThread]: Flushing usage events
+[0m16:31:23.087677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002685F2119A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026861AA5430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026861AA5490>]}
+
+
+============================== 16:31:23.093679 | 52978388-1bae-42de-93cc-5538741bb556 ==============================
+[0m16:31:23.093679 [info ] [MainThread]: Running with dbt=1.7.11
+[0m16:31:23.094680 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\alarcher\\Documents\\dbt\\dbt_env\\dbt_wizetrading\\dbt-wizetrading-demo\\logs', 'profiles_dir': 'C:\\Users\\alarcher\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:31:23.295309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '52978388-1bae-42de-93cc-5538741bb556', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002685FB087F0>]}
+[0m16:31:23.372309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '52978388-1bae-42de-93cc-5538741bb556', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026861A8E700>]}
+[0m16:31:23.374309 [info ] [MainThread]: Registered adapter: postgres=1.7.11
+[0m16:31:23.382309 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m16:31:23.416849 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading dbt_wizetrading: trading_perp_btc_data\schema.yml - Runtime Error
+    Syntax error near line 68
+    ------------------------------
+    65 |          - unique
+    66 |          - not null
+    67 |          - name: "accepted values"
+    68 |             args:
+    69 |               values: 
+    70 |                 - btcusd_perp@kline_4h
+    71 |                 - btcusd_perp@kline_5m
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block mapping
+      in "<unicode string>", line 67, column 12
+    did not find expected key
+      in "<unicode string>", line 68, column 13
+[0m16:31:23.419854 [debug] [MainThread]: Command `dbt test` failed at 16:31:23.419854 after 0.37 seconds
+[0m16:31:23.420848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002685F2119A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026861F08400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026861F08430>]}
+[0m16:31:23.420848 [debug] [MainThread]: Flushing usage events
+[0m16:32:32.709567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FAEC0E9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FB1478430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FB1478490>]}
+
+
+============================== 16:32:32.714567 | bebdc631-17df-42a3-b5e6-3a79f5ca86d1 ==============================
+[0m16:32:32.714567 [info ] [MainThread]: Running with dbt=1.7.11
+[0m16:32:32.715567 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\alarcher\\.dbt', 'log_path': 'C:\\Users\\alarcher\\Documents\\dbt\\dbt_env\\dbt_wizetrading\\dbt-wizetrading-demo\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt test', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:32.914360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bebdc631-17df-42a3-b5e6-3a79f5ca86d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FAF5117F0>]}
+[0m16:32:33.000360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bebdc631-17df-42a3-b5e6-3a79f5ca86d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FB141E700>]}
+[0m16:32:33.002360 [info ] [MainThread]: Registered adapter: postgres=1.7.11
+[0m16:32:33.011360 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m16:32:33.047441 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading dbt_wizetrading: trading_perp_btc_data\schema.yml - Runtime Error
+    Syntax error near line 68
+    ------------------------------
+    65 |          - unique
+    66 |          - not null
+    67 |          - name: "accepted values"
+    68 |           args:
+    69 |             values: 
+    70 |               - btcusd_perp@kline_4h
+    71 |               - btcusd_perp@kline_5m
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block collection
+      in "<unicode string>", line 65, column 10
+    did not find expected '-' indicator
+      in "<unicode string>", line 68, column 11
+[0m16:32:33.050365 [debug] [MainThread]: Command `dbt test` failed at 16:32:33.050365 after 0.38 seconds
+[0m16:32:33.051365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FAEC0E9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FB1918400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FB1918430>]}
+[0m16:32:33.051365 [debug] [MainThread]: Flushing usage events
+[0m16:32:55.362358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D70D509A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D735E9430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D735E9490>]}
+
+
+============================== 16:32:55.368357 | 61ba4dda-8bf9-4c1f-a8ff-d0fa96b6b1af ==============================
+[0m16:32:55.368357 [info ] [MainThread]: Running with dbt=1.7.11
+[0m16:32:55.369352 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alarcher\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\alarcher\\Documents\\dbt\\dbt_env\\dbt_wizetrading\\dbt-wizetrading-demo\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:55.577359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61ba4dda-8bf9-4c1f-a8ff-d0fa96b6b1af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D716467F0>]}
+[0m16:32:55.666351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61ba4dda-8bf9-4c1f-a8ff-d0fa96b6b1af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D735CE700>]}
+[0m16:32:55.667359 [info ] [MainThread]: Registered adapter: postgres=1.7.11
+[0m16:32:55.677354 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m16:32:55.713830 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading dbt_wizetrading: trading_perp_btc_data\schema.yml - Runtime Error
+    Syntax error near line 68
+    ------------------------------
+    65 |          - unique
+    66 |          - not null
+    67 |          - name: "accepted values"
+    68 |           args:
+    69 |             values: 
+    70 |               - "btcusd_perp@kline_4h"
+    71 |               - "btcusd_perp@kline_5m"
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block collection
+      in "<unicode string>", line 65, column 10
+    did not find expected '-' indicator
+      in "<unicode string>", line 68, column 11
+[0m16:32:55.715963 [debug] [MainThread]: Command `dbt test` failed at 16:32:55.715963 after 0.39 seconds
+[0m16:32:55.716516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D70D509A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D73A48400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D73A48430>]}
+[0m16:32:55.717079 [debug] [MainThread]: Flushing usage events
+[0m16:35:06.451846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F114F21970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1177B93D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1177B9A60>]}
+
+
+============================== 16:35:06.457846 | 8c00d442-875e-417b-9622-8d6a40ea5602 ==============================
+[0m16:35:06.457846 [info ] [MainThread]: Running with dbt=1.7.11
+[0m16:35:06.458846 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\alarcher\\Documents\\dbt\\dbt_env\\dbt_wizetrading\\dbt-wizetrading-demo\\logs', 'profiles_dir': 'C:\\Users\\alarcher\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:35:06.660852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c00d442-875e-417b-9622-8d6a40ea5602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F115818CD0>]}
+[0m16:35:06.752403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c00d442-875e-417b-9622-8d6a40ea5602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F117A47520>]}
+[0m16:35:06.754402 [info ] [MainThread]: Registered adapter: postgres=1.7.11
+[0m16:35:06.763402 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m16:35:06.866400 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:35:06.868399 [debug] [MainThread]: Partial parsing: updated file: dbt_wizetrading://models\trading_perp_btc_data\schema.yml
+[0m16:35:06.974321 [debug] [MainThread]: 1699: static parser successfully parsed trading_perp_btc_data\btc_perp_data_15m.sql
+[0m16:35:07.183648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c00d442-875e-417b-9622-8d6a40ea5602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F11804DD30>]}
+[0m16:35:07.204642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c00d442-875e-417b-9622-8d6a40ea5602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F117B5E100>]}
+[0m16:35:07.204642 [info ] [MainThread]: Found 17 models, 3 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m16:35:07.205641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c00d442-875e-417b-9622-8d6a40ea5602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F117B5E250>]}
+[0m16:35:07.207654 [info ] [MainThread]: 
+[0m16:35:07.208648 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:35:07.211647 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aoavfbel_wizetrading'
+[0m16:35:07.221647 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel_wizetrading"
+[0m16:35:07.222646 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: BEGIN
+[0m16:35:07.222646 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:35:07.422582 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m16:35:07.422582 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel_wizetrading"
+[0m16:35:07.423582 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "list_aoavfbel_wizetrading"} */
+select
+      'aoavfbel' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'wizetrading'
+    union all
+    select
+      'aoavfbel' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'wizetrading'
+    union all
+    select
+      'aoavfbel' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'wizetrading'
+  
+[0m16:35:07.450613 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.0 seconds
+[0m16:35:07.452642 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: ROLLBACK
+[0m16:35:07.494582 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: Close
+[0m16:35:07.502585 [debug] [MainThread]: Using postgres connection "master"
+[0m16:35:07.502585 [debug] [MainThread]: On master: BEGIN
+[0m16:35:07.502585 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:35:07.705769 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:35:07.706769 [debug] [MainThread]: Using postgres connection "master"
+[0m16:35:07.706769 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m16:35:07.739768 [debug] [MainThread]: SQL status: SELECT 32 in 0.0 seconds
+[0m16:35:07.745770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c00d442-875e-417b-9622-8d6a40ea5602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F117B03D00>]}
+[0m16:35:07.745770 [debug] [MainThread]: On master: ROLLBACK
+[0m16:35:07.768767 [debug] [MainThread]: Using postgres connection "master"
+[0m16:35:07.768767 [debug] [MainThread]: On master: BEGIN
+[0m16:35:07.812764 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:35:07.812764 [debug] [MainThread]: On master: COMMIT
+[0m16:35:07.812764 [debug] [MainThread]: Using postgres connection "master"
+[0m16:35:07.813765 [debug] [MainThread]: On master: COMMIT
+[0m16:35:07.834764 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m16:35:07.834764 [debug] [MainThread]: On master: Close
+[0m16:35:07.835764 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:35:07.836764 [info ] [MainThread]: 
+[0m16:35:07.844759 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:35:07.845765 [info ] [Thread-1  ]: 1 of 3 START test accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w  [RUN]
+[0m16:35:07.847761 [debug] [Thread-1  ]: Acquiring new postgres connection 'test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6'
+[0m16:35:07.847761 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:35:07.856764 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:35:07.869102 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6 (compile): 16:35:07.847761 => 16:35:07.868272
+[0m16:35:07.870101 [debug] [Thread-1  ]: Began executing node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:35:07.886477 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:35:07.888471 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:35:07.889468 [debug] [Thread-1  ]: On test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6: BEGIN
+[0m16:35:07.890467 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m16:35:08.097295 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m16:35:08.098295 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:35:08.099295 [debug] [Thread-1  ]: On test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        stream as value_field,
+        count(*) as n_records
+
+    from "aoavfbel"."wizetrading"."btc_perp_data_15m"
+    group by stream
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'btcusd_perp@kline_4h','btcusd_perp@kline_5m','btcusd_perp@kline_1h','btcusd_perp@kline_1d','btcusd_perp@kline_15m','btcusd_perp@kline_1w'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m16:35:08.186295 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m16:35:08.187350 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6 (execute): 16:35:07.870101 => 16:35:08.187350
+[0m16:35:08.188363 [debug] [Thread-1  ]: On test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6: ROLLBACK
+[0m16:35:08.211340 [debug] [Thread-1  ]: On test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6: Close
+[0m16:35:08.212347 [info ] [Thread-1  ]: 1 of 3 PASS accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w  [[32mPASS[0m in 0.37s]
+[0m16:35:08.213361 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:35:08.214366 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.not_btc_perp_data_15m_stream.f532db4300
+[0m16:35:08.215350 [info ] [Thread-1  ]: 2 of 3 START test not_btc_perp_data_15m_stream ................................. [RUN]
+[0m16:35:08.216352 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6, now test.dbt_wizetrading.not_btc_perp_data_15m_stream.f532db4300)
+[0m16:35:08.217350 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.not_btc_perp_data_15m_stream.f532db4300
+[0m16:35:08.235901 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.not_btc_perp_data_15m_stream.f532db4300 (compile): 16:35:08.217350 => 16:35:08.235901
+[0m16:35:08.291154 [debug] [Thread-1  ]: Compilation Error in test not_btc_perp_data_15m_stream (models\trading_perp_btc_data\schema.yml)
+  'test_not' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m16:35:08.291154 [error] [Thread-1  ]: 2 of 3 ERROR not_btc_perp_data_15m_stream ...................................... [[31mERROR[0m in 0.07s]
+[0m16:35:08.293155 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.not_btc_perp_data_15m_stream.f532db4300
+[0m16:35:08.293155 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:35:08.294154 [info ] [Thread-1  ]: 3 of 3 START test unique_btc_perp_data_15m_stream .............................. [RUN]
+[0m16:35:08.295155 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_wizetrading.not_btc_perp_data_15m_stream.f532db4300, now test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c)
+[0m16:35:08.296157 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:35:08.303154 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:35:08.305159 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c (compile): 16:35:08.296157 => 16:35:08.305159
+[0m16:35:08.305159 [debug] [Thread-1  ]: Began executing node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:35:08.309157 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:35:08.310159 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:35:08.311155 [debug] [Thread-1  ]: On test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c: BEGIN
+[0m16:35:08.311155 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m16:35:08.496626 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m16:35:08.496626 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:35:08.497632 [debug] [Thread-1  ]: On test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    stream as unique_field,
+    count(*) as n_records
+
+from "aoavfbel"."wizetrading"."btc_perp_data_15m"
+where stream is not null
+group by stream
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m16:35:08.576547 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m16:35:08.577548 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c (execute): 16:35:08.306158 => 16:35:08.577548
+[0m16:35:08.578547 [debug] [Thread-1  ]: On test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c: ROLLBACK
+[0m16:35:08.600540 [debug] [Thread-1  ]: On test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c: Close
+[0m16:35:08.601547 [error] [Thread-1  ]: 3 of 3 FAIL 1 unique_btc_perp_data_15m_stream .................................. [[31mFAIL 1[0m in 0.31s]
+[0m16:35:08.602546 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:35:08.603547 [debug] [MainThread]: Using postgres connection "master"
+[0m16:35:08.604551 [debug] [MainThread]: On master: BEGIN
+[0m16:35:08.604551 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:35:08.794913 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:35:08.795914 [debug] [MainThread]: On master: COMMIT
+[0m16:35:08.795914 [debug] [MainThread]: Using postgres connection "master"
+[0m16:35:08.795914 [debug] [MainThread]: On master: COMMIT
+[0m16:35:08.817913 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m16:35:08.817913 [debug] [MainThread]: On master: Close
+[0m16:35:08.818912 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:35:08.818912 [debug] [MainThread]: Connection 'list_aoavfbel_wizetrading' was properly closed.
+[0m16:35:08.818912 [debug] [MainThread]: Connection 'test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c' was properly closed.
+[0m16:35:08.819913 [info ] [MainThread]: 
+[0m16:35:08.819913 [info ] [MainThread]: Finished running 3 tests in 0 hours 0 minutes and 1.61 seconds (1.61s).
+[0m16:35:08.821913 [debug] [MainThread]: Command end result
+[0m16:35:08.834909 [info ] [MainThread]: 
+[0m16:35:08.834941 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m16:35:08.835906 [info ] [MainThread]: 
+[0m16:35:08.836919 [error] [MainThread]:   Compilation Error in test not_btc_perp_data_15m_stream (models\trading_perp_btc_data\schema.yml)
+  'test_not' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m16:35:08.836919 [info ] [MainThread]: 
+[0m16:35:08.837906 [error] [MainThread]: [31mFailure in test unique_btc_perp_data_15m_stream (models\trading_perp_btc_data\schema.yml)[0m
+[0m16:35:08.837906 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m16:35:08.838917 [info ] [MainThread]: 
+[0m16:35:08.838917 [info ] [MainThread]:   compiled Code at target\compiled\dbt_wizetrading\models\trading_perp_btc_data\schema.yml\unique_btc_perp_data_15m_stream.sql
+[0m16:35:08.839912 [info ] [MainThread]: 
+[0m16:35:08.839912 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=0 TOTAL=3
+[0m16:35:08.840906 [debug] [MainThread]: Command `dbt test` failed at 16:35:08.840906 after 2.43 seconds
+[0m16:35:08.841906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F114F21970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F117B5E370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F117B5E3A0>]}
+[0m16:35:08.842912 [debug] [MainThread]: Flushing usage events
+[0m16:36:47.752521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C31A09D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C5A594F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C5A59520>]}
+
+
+============================== 16:36:47.759436 | 72f994da-d51c-42a2-b868-03704b7e5f35 ==============================
+[0m16:36:47.759436 [info ] [MainThread]: Running with dbt=1.7.11
+[0m16:36:47.760469 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\alarcher\\Documents\\dbt\\dbt_env\\dbt_wizetrading\\dbt-wizetrading-demo\\logs', 'profiles_dir': 'C:\\Users\\alarcher\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:36:47.961666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '72f994da-d51c-42a2-b868-03704b7e5f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C3AB6BE0>]}
+[0m16:36:48.037675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '72f994da-d51c-42a2-b868-03704b7e5f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C5CED580>]}
+[0m16:36:48.039673 [info ] [MainThread]: Registered adapter: postgres=1.7.11
+[0m16:36:48.047172 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m16:36:48.151454 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:36:48.153454 [debug] [MainThread]: Partial parsing: updated file: dbt_wizetrading://models\trading_perp_btc_data\schema.yml
+[0m16:36:48.250761 [debug] [MainThread]: 1699: static parser successfully parsed trading_perp_btc_data\btc_perp_data_15m.sql
+[0m16:36:48.446019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '72f994da-d51c-42a2-b868-03704b7e5f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C62E9EE0>]}
+[0m16:36:48.466599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '72f994da-d51c-42a2-b868-03704b7e5f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C5E5B7C0>]}
+[0m16:36:48.467601 [info ] [MainThread]: Found 17 models, 3 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m16:36:48.468601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '72f994da-d51c-42a2-b868-03704b7e5f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C5E5B880>]}
+[0m16:36:48.469602 [info ] [MainThread]: 
+[0m16:36:48.471602 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:36:48.474602 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aoavfbel_wizetrading'
+[0m16:36:48.485606 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel_wizetrading"
+[0m16:36:48.485606 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: BEGIN
+[0m16:36:48.486608 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:36:48.720589 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m16:36:48.721589 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel_wizetrading"
+[0m16:36:48.721589 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "list_aoavfbel_wizetrading"} */
+select
+      'aoavfbel' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'wizetrading'
+    union all
+    select
+      'aoavfbel' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'wizetrading'
+    union all
+    select
+      'aoavfbel' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'wizetrading'
+  
+[0m16:36:48.747588 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.0 seconds
+[0m16:36:48.749588 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: ROLLBACK
+[0m16:36:48.770587 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: Close
+[0m16:36:48.780587 [debug] [MainThread]: Using postgres connection "master"
+[0m16:36:48.781587 [debug] [MainThread]: On master: BEGIN
+[0m16:36:48.781587 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:36:48.996194 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:36:48.997194 [debug] [MainThread]: Using postgres connection "master"
+[0m16:36:48.997194 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m16:36:49.033198 [debug] [MainThread]: SQL status: SELECT 32 in 0.0 seconds
+[0m16:36:49.038191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '72f994da-d51c-42a2-b868-03704b7e5f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C62E7DC0>]}
+[0m16:36:49.039192 [debug] [MainThread]: On master: ROLLBACK
+[0m16:36:49.060197 [debug] [MainThread]: Using postgres connection "master"
+[0m16:36:49.061199 [debug] [MainThread]: On master: BEGIN
+[0m16:36:49.104190 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:36:49.104190 [debug] [MainThread]: On master: COMMIT
+[0m16:36:49.104190 [debug] [MainThread]: Using postgres connection "master"
+[0m16:36:49.105196 [debug] [MainThread]: On master: COMMIT
+[0m16:36:49.125729 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m16:36:49.126823 [debug] [MainThread]: On master: Close
+[0m16:36:49.127831 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:36:49.128483 [info ] [MainThread]: 
+[0m16:36:49.136097 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:36:49.136599 [info ] [Thread-1  ]: 1 of 3 START test accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w  [RUN]
+[0m16:36:49.137331 [debug] [Thread-1  ]: Acquiring new postgres connection 'test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6'
+[0m16:36:49.137832 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:36:49.145060 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:36:49.147055 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6 (compile): 16:36:49.137832 => 16:36:49.147055
+[0m16:36:49.148099 [debug] [Thread-1  ]: Began executing node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:36:49.163148 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:36:49.168194 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:36:49.169148 [debug] [Thread-1  ]: On test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6: BEGIN
+[0m16:36:49.169148 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m16:36:49.417895 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m16:36:49.418895 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:36:49.418895 [debug] [Thread-1  ]: On test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        stream as value_field,
+        count(*) as n_records
+
+    from "aoavfbel"."wizetrading"."btc_perp_data_15m"
+    group by stream
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'btcusd_perp@kline_4h','btcusd_perp@kline_5m','btcusd_perp@kline_1h','btcusd_perp@kline_1d','btcusd_perp@kline_15m','btcusd_perp@kline_1w'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m16:36:49.499109 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m16:36:49.501113 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6 (execute): 16:36:49.148099 => 16:36:49.501113
+[0m16:36:49.502114 [debug] [Thread-1  ]: On test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6: ROLLBACK
+[0m16:36:49.524106 [debug] [Thread-1  ]: On test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6: Close
+[0m16:36:49.525109 [info ] [Thread-1  ]: 1 of 3 PASS accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w  [[32mPASS[0m in 0.39s]
+[0m16:36:49.526111 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:36:49.526111 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f
+[0m16:36:49.527107 [info ] [Thread-1  ]: 2 of 3 START test not_null_btc_perp_data_15m_stream ............................ [RUN]
+[0m16:36:49.528107 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6, now test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f)
+[0m16:36:49.528107 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f
+[0m16:36:49.534107 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f"
+[0m16:36:49.537106 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f (compile): 16:36:49.528107 => 16:36:49.536106
+[0m16:36:49.538105 [debug] [Thread-1  ]: Began executing node test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f
+[0m16:36:49.540107 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f"
+[0m16:36:49.542107 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f"
+[0m16:36:49.543108 [debug] [Thread-1  ]: On test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f: BEGIN
+[0m16:36:49.543108 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m16:36:49.781688 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m16:36:49.782698 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f"
+[0m16:36:49.782698 [debug] [Thread-1  ]: On test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select stream
+from "aoavfbel"."wizetrading"."btc_perp_data_15m"
+where stream is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:36:49.862901 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m16:36:49.864901 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f (execute): 16:36:49.538105 => 16:36:49.864901
+[0m16:36:49.864901 [debug] [Thread-1  ]: On test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f: ROLLBACK
+[0m16:36:49.886895 [debug] [Thread-1  ]: On test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f: Close
+[0m16:36:49.887958 [info ] [Thread-1  ]: 2 of 3 PASS not_null_btc_perp_data_15m_stream .................................. [[32mPASS[0m in 0.36s]
+[0m16:36:49.888895 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f
+[0m16:36:49.888895 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:36:49.889894 [info ] [Thread-1  ]: 3 of 3 START test unique_btc_perp_data_15m_stream .............................. [RUN]
+[0m16:36:49.890895 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f, now test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c)
+[0m16:36:49.890895 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:36:49.896898 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:36:49.898898 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c (compile): 16:36:49.890895 => 16:36:49.898898
+[0m16:36:49.899898 [debug] [Thread-1  ]: Began executing node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:36:49.901898 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:36:49.903894 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:36:49.904898 [debug] [Thread-1  ]: On test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c: BEGIN
+[0m16:36:49.904898 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m16:36:50.103892 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m16:36:50.104896 [debug] [Thread-1  ]: Using postgres connection "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:36:50.104896 [debug] [Thread-1  ]: On test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "node_id": "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    stream as unique_field,
+    count(*) as n_records
+
+from "aoavfbel"."wizetrading"."btc_perp_data_15m"
+where stream is not null
+group by stream
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m16:36:50.200168 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m16:36:50.201168 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c (execute): 16:36:49.899898 => 16:36:50.201168
+[0m16:36:50.202168 [debug] [Thread-1  ]: On test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c: ROLLBACK
+[0m16:36:50.223235 [debug] [Thread-1  ]: On test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c: Close
+[0m16:36:50.225234 [error] [Thread-1  ]: 3 of 3 FAIL 1 unique_btc_perp_data_15m_stream .................................. [[31mFAIL 1[0m in 0.34s]
+[0m16:36:50.227235 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:36:50.230235 [debug] [MainThread]: Using postgres connection "master"
+[0m16:36:50.231234 [debug] [MainThread]: On master: BEGIN
+[0m16:36:50.231234 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:36:50.429234 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:36:50.430234 [debug] [MainThread]: On master: COMMIT
+[0m16:36:50.430234 [debug] [MainThread]: Using postgres connection "master"
+[0m16:36:50.431227 [debug] [MainThread]: On master: COMMIT
+[0m16:36:50.454234 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m16:36:50.455234 [debug] [MainThread]: On master: Close
+[0m16:36:50.456234 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:36:50.456234 [debug] [MainThread]: Connection 'list_aoavfbel_wizetrading' was properly closed.
+[0m16:36:50.456234 [debug] [MainThread]: Connection 'test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c' was properly closed.
+[0m16:36:50.457227 [info ] [MainThread]: 
+[0m16:36:50.457227 [info ] [MainThread]: Finished running 3 tests in 0 hours 0 minutes and 1.99 seconds (1.99s).
+[0m16:36:50.458227 [debug] [MainThread]: Command end result
+[0m16:36:50.470229 [info ] [MainThread]: 
+[0m16:36:50.471227 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:36:50.472227 [info ] [MainThread]: 
+[0m16:36:50.472227 [error] [MainThread]: [31mFailure in test unique_btc_perp_data_15m_stream (models\trading_perp_btc_data\schema.yml)[0m
+[0m16:36:50.473227 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m16:36:50.474237 [info ] [MainThread]: 
+[0m16:36:50.475227 [info ] [MainThread]:   compiled Code at target\compiled\dbt_wizetrading\models\trading_perp_btc_data\schema.yml\unique_btc_perp_data_15m_stream.sql
+[0m16:36:50.475227 [info ] [MainThread]: 
+[0m16:36:50.476234 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m16:36:50.477621 [debug] [MainThread]: Command `dbt test` failed at 16:36:50.477394 after 2.77 seconds
+[0m16:36:50.477621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C31A09D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C5E5B910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197C5E5B9A0>]}
+[0m16:36:50.478132 [debug] [MainThread]: Flushing usage events
+[0m16:37:55.757155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5537BFA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C556063610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C556063CD0>]}
+
+
+============================== 16:37:55.763154 | 30b40807-9d6f-4daa-95e3-c45a2312e2b1 ==============================
+[0m16:37:55.763154 [info ] [MainThread]: Running with dbt=1.7.11
+[0m16:37:55.764148 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\alarcher\\Documents\\dbt\\dbt_env\\dbt_wizetrading\\dbt-wizetrading-demo\\logs', 'profiles_dir': 'C:\\Users\\alarcher\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate --target-path docs/', 'log_format': 'default', 'introspect': 'True', 'target_path': 'docs/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:55.960694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '30b40807-9d6f-4daa-95e3-c45a2312e2b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5540C37F0>]}
+[0m16:37:56.038229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '30b40807-9d6f-4daa-95e3-c45a2312e2b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C556058C40>]}
+[0m16:37:56.040229 [info ] [MainThread]: Registered adapter: postgres=1.7.11
+[0m16:37:56.048223 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m16:37:56.154224 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:37:56.155224 [debug] [MainThread]: Partial parsing: updated file: dbt_wizetrading://models\trading_perp_btc_data\schema.yml
+[0m16:37:56.257748 [debug] [MainThread]: 1699: static parser successfully parsed trading_perp_btc_data\btc_perp_data_15m.sql
+[0m16:37:56.445495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '30b40807-9d6f-4daa-95e3-c45a2312e2b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5568FBEE0>]}
+[0m16:37:56.451499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '30b40807-9d6f-4daa-95e3-c45a2312e2b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5563F9280>]}
+[0m16:37:56.452489 [info ] [MainThread]: Found 17 models, 3 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m16:37:56.453488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30b40807-9d6f-4daa-95e3-c45a2312e2b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5563F91F0>]}
+[0m16:37:56.454497 [info ] [MainThread]: 
+[0m16:37:56.456498 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:37:56.459558 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aoavfbel_wizetrading'
+[0m16:37:56.468494 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel_wizetrading"
+[0m16:37:56.468494 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: BEGIN
+[0m16:37:56.469494 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:37:56.733428 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m16:37:56.734427 [debug] [ThreadPool]: Using postgres connection "list_aoavfbel_wizetrading"
+[0m16:37:56.734427 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "list_aoavfbel_wizetrading"} */
+select
+      'aoavfbel' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'wizetrading'
+    union all
+    select
+      'aoavfbel' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'wizetrading'
+    union all
+    select
+      'aoavfbel' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'wizetrading'
+  
+[0m16:37:56.760585 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.0 seconds
+[0m16:37:56.762582 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: ROLLBACK
+[0m16:37:56.783584 [debug] [ThreadPool]: On list_aoavfbel_wizetrading: Close
+[0m16:37:56.792583 [debug] [MainThread]: Using postgres connection "master"
+[0m16:37:56.792583 [debug] [MainThread]: On master: BEGIN
+[0m16:37:56.792583 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:37:56.989861 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:37:56.989861 [debug] [MainThread]: Using postgres connection "master"
+[0m16:37:56.989861 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m16:37:57.023870 [debug] [MainThread]: SQL status: SELECT 32 in 0.0 seconds
+[0m16:37:57.030867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30b40807-9d6f-4daa-95e3-c45a2312e2b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5565D44C0>]}
+[0m16:37:57.030867 [debug] [MainThread]: On master: ROLLBACK
+[0m16:37:57.052807 [debug] [MainThread]: On master: Close
+[0m16:37:57.053808 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:37:57.053808 [info ] [MainThread]: 
+[0m16:37:57.061805 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perptreated_data
+[0m16:37:57.062799 [debug] [Thread-1  ]: Acquiring new postgres connection 'model.dbt_wizetrading.btc_perptreated_data'
+[0m16:37:57.062799 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perptreated_data
+[0m16:37:57.069798 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perptreated_data"
+[0m16:37:57.071797 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perptreated_data (compile): 16:37:57.062799 => 16:37:57.071797
+[0m16:37:57.071797 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perptreated_data
+[0m16:37:57.072798 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perptreated_data (execute): 16:37:57.072798 => 16:37:57.072798
+[0m16:37:57.073798 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perptreated_data
+[0m16:37:57.074797 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.raw_data_btc_perp
+[0m16:37:57.075798 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perptreated_data, now model.dbt_wizetrading.raw_data_btc_perp)
+[0m16:37:57.075798 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.raw_data_btc_perp
+[0m16:37:57.079798 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.raw_data_btc_perp"
+[0m16:37:57.081797 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.raw_data_btc_perp (compile): 16:37:57.075798 => 16:37:57.081797
+[0m16:37:57.081797 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.raw_data_btc_perp
+[0m16:37:57.082798 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.raw_data_btc_perp (execute): 16:37:57.082798 => 16:37:57.082798
+[0m16:37:57.083798 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.raw_data_btc_perp
+[0m16:37:57.083798 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_15m
+[0m16:37:57.084797 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.raw_data_btc_perp, now model.dbt_wizetrading.btc_perp_data_15m)
+[0m16:37:57.085796 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_15m
+[0m16:37:57.088798 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_15m"
+[0m16:37:57.090798 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m (compile): 16:37:57.085796 => 16:37:57.089805
+[0m16:37:57.090798 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_15m
+[0m16:37:57.091797 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m (execute): 16:37:57.090798 => 16:37:57.090798
+[0m16:37:57.091797 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_15m
+[0m16:37:57.092798 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_15m_history
+[0m16:37:57.093798 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_15m, now model.dbt_wizetrading.btc_perp_data_15m_history)
+[0m16:37:57.093798 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_15m_history
+[0m16:37:57.096797 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_15m_history"
+[0m16:37:57.099798 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m_history (compile): 16:37:57.094798 => 16:37:57.098798
+[0m16:37:57.099798 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_15m_history
+[0m16:37:57.100806 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m_history (execute): 16:37:57.100806 => 16:37:57.100806
+[0m16:37:57.101806 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_15m_history
+[0m16:37:57.101806 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1h
+[0m16:37:57.102800 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_15m_history, now model.dbt_wizetrading.btc_perp_data_1h)
+[0m16:37:57.103808 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1h
+[0m16:37:57.106797 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1h"
+[0m16:37:57.107796 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h (compile): 16:37:57.103808 => 16:37:57.107796
+[0m16:37:57.108797 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1h
+[0m16:37:57.108797 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h (execute): 16:37:57.108797 => 16:37:57.108797
+[0m16:37:57.109797 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1h
+[0m16:37:57.110797 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1h_history
+[0m16:37:57.111797 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1h, now model.dbt_wizetrading.btc_perp_data_1h_history)
+[0m16:37:57.111797 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1h_history
+[0m16:37:57.115798 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1h_history"
+[0m16:37:57.116797 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h_history (compile): 16:37:57.112797 => 16:37:57.116797
+[0m16:37:57.117797 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1h_history
+[0m16:37:57.117797 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h_history (execute): 16:37:57.117797 => 16:37:57.117797
+[0m16:37:57.118797 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1h_history
+[0m16:37:57.119798 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1w
+[0m16:37:57.120796 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1h_history, now model.dbt_wizetrading.btc_perp_data_1w)
+[0m16:37:57.120796 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1w
+[0m16:37:57.123796 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1w"
+[0m16:37:57.125797 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w (compile): 16:37:57.121797 => 16:37:57.125797
+[0m16:37:57.125797 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1w
+[0m16:37:57.126800 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w (execute): 16:37:57.126800 => 16:37:57.126800
+[0m16:37:57.127806 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1w
+[0m16:37:57.127806 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1w_history
+[0m16:37:57.128796 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1w, now model.dbt_wizetrading.btc_perp_data_1w_history)
+[0m16:37:57.129805 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1w_history
+[0m16:37:57.132801 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1w_history"
+[0m16:37:57.134799 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w_history (compile): 16:37:57.129805 => 16:37:57.133799
+[0m16:37:57.134799 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1w_history
+[0m16:37:57.135799 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w_history (execute): 16:37:57.134799 => 16:37:57.134799
+[0m16:37:57.136799 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1w_history
+[0m16:37:57.136799 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_4h
+[0m16:37:57.137798 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1w_history, now model.dbt_wizetrading.btc_perp_data_4h)
+[0m16:37:57.137798 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_4h
+[0m16:37:57.140798 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_4h"
+[0m16:37:57.142797 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h (compile): 16:37:57.138798 => 16:37:57.142797
+[0m16:37:57.142797 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_4h
+[0m16:37:57.143798 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h (execute): 16:37:57.143798 => 16:37:57.143798
+[0m16:37:57.144798 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_4h
+[0m16:37:57.144798 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_4h_history
+[0m16:37:57.145801 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_4h, now model.dbt_wizetrading.btc_perp_data_4h_history)
+[0m16:37:57.145801 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_4h_history
+[0m16:37:57.149879 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_4h_history"
+[0m16:37:57.151798 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h_history (compile): 16:37:57.146859 => 16:37:57.150871
+[0m16:37:57.151798 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_4h_history
+[0m16:37:57.152796 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h_history (execute): 16:37:57.152796 => 16:37:57.152796
+[0m16:37:57.153798 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_4h_history
+[0m16:37:57.153798 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_5m
+[0m16:37:57.154796 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_4h_history, now model.dbt_wizetrading.btc_perp_data_5m)
+[0m16:37:57.155795 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_5m
+[0m16:37:57.157795 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_5m"
+[0m16:37:57.159794 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m (compile): 16:37:57.155795 => 16:37:57.159794
+[0m16:37:57.159794 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_5m
+[0m16:37:57.160795 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m (execute): 16:37:57.159794 => 16:37:57.159794
+[0m16:37:57.161795 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_5m
+[0m16:37:57.161795 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_5m_history
+[0m16:37:57.162795 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_5m, now model.dbt_wizetrading.btc_perp_data_5m_history)
+[0m16:37:57.162795 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_5m_history
+[0m16:37:57.165795 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_5m_history"
+[0m16:37:57.167794 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m_history (compile): 16:37:57.163795 => 16:37:57.166794
+[0m16:37:57.167794 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_5m_history
+[0m16:37:57.168794 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m_history (execute): 16:37:57.167794 => 16:37:57.167794
+[0m16:37:57.169795 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_5m_history
+[0m16:37:57.169795 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:37:57.170793 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_5m_history, now test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6)
+[0m16:37:57.170793 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:37:57.175795 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6"
+[0m16:37:57.177862 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6 (compile): 16:37:57.171795 => 16:37:57.177862
+[0m16:37:57.178795 [debug] [Thread-1  ]: Began executing node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:37:57.178795 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6 (execute): 16:37:57.178795 => 16:37:57.178795
+[0m16:37:57.179795 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6
+[0m16:37:57.180795 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f
+[0m16:37:57.181795 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_wizetrading.accepted_values_btc_perp_data_15m_stream__btcusd_perp_kline_4h__btcusd_perp_kline_5m__btcusd_perp_kline_1h__btcusd_perp_kline_1d__btcusd_perp_kline_15m__btcusd_perp_kline_1w.b16d6a02f6, now test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f)
+[0m16:37:57.181795 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f
+[0m16:37:57.189793 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f"
+[0m16:37:57.191797 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f (compile): 16:37:57.181795 => 16:37:57.191797
+[0m16:37:57.192793 [debug] [Thread-1  ]: Began executing node test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f
+[0m16:37:57.192793 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f (execute): 16:37:57.192793 => 16:37:57.192793
+[0m16:37:57.193793 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f
+[0m16:37:57.194793 [debug] [Thread-1  ]: Began running node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:37:57.194793 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_wizetrading.not_null_btc_perp_data_15m_stream.6a93dec70f, now test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c)
+[0m16:37:57.195794 [debug] [Thread-1  ]: Began compiling node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:37:57.201793 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c"
+[0m16:37:57.202793 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c (compile): 16:37:57.195794 => 16:37:57.202793
+[0m16:37:57.203792 [debug] [Thread-1  ]: Began executing node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:37:57.203792 [debug] [Thread-1  ]: Timing info for test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c (execute): 16:37:57.203792 => 16:37:57.203792
+[0m16:37:57.204799 [debug] [Thread-1  ]: Finished running node test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c
+[0m16:37:57.205797 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_15m_current_and_history
+[0m16:37:57.205797 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_wizetrading.unique_btc_perp_data_15m_stream.d31528f66c, now model.dbt_wizetrading.btc_perp_data_15m_current_and_history)
+[0m16:37:57.206793 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_15m_current_and_history
+[0m16:37:57.209792 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_15m_current_and_history"
+[0m16:37:57.211792 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m_current_and_history (compile): 16:37:57.206793 => 16:37:57.211792
+[0m16:37:57.212802 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_15m_current_and_history
+[0m16:37:57.212802 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_15m_current_and_history (execute): 16:37:57.212802 => 16:37:57.212802
+[0m16:37:57.213802 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_15m_current_and_history
+[0m16:37:57.214797 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1h_current_and_history
+[0m16:37:57.214797 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_15m_current_and_history, now model.dbt_wizetrading.btc_perp_data_1h_current_and_history)
+[0m16:37:57.215793 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1h_current_and_history
+[0m16:37:57.219792 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1h_current_and_history"
+[0m16:37:57.221791 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h_current_and_history (compile): 16:37:57.215793 => 16:37:57.221791
+[0m16:37:57.222792 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1h_current_and_history
+[0m16:37:57.222792 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1h_current_and_history (execute): 16:37:57.222792 => 16:37:57.222792
+[0m16:37:57.223792 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1h_current_and_history
+[0m16:37:57.224792 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_1w_current_and_history
+[0m16:37:57.224792 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1h_current_and_history, now model.dbt_wizetrading.btc_perp_data_1w_current_and_history)
+[0m16:37:57.225792 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_1w_current_and_history
+[0m16:37:57.228791 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_1w_current_and_history"
+[0m16:37:57.230791 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w_current_and_history (compile): 16:37:57.225792 => 16:37:57.230791
+[0m16:37:57.231792 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_1w_current_and_history
+[0m16:37:57.231792 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_1w_current_and_history (execute): 16:37:57.231792 => 16:37:57.231792
+[0m16:37:57.232792 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_1w_current_and_history
+[0m16:37:57.232792 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_4h_current_and_history
+[0m16:37:57.233791 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_1w_current_and_history, now model.dbt_wizetrading.btc_perp_data_4h_current_and_history)
+[0m16:37:57.234792 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_4h_current_and_history
+[0m16:37:57.237791 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_4h_current_and_history"
+[0m16:37:57.239794 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h_current_and_history (compile): 16:37:57.234792 => 16:37:57.239794
+[0m16:37:57.240791 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_4h_current_and_history
+[0m16:37:57.240791 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_4h_current_and_history (execute): 16:37:57.240791 => 16:37:57.240791
+[0m16:37:57.241791 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_4h_current_and_history
+[0m16:37:57.241791 [debug] [Thread-1  ]: Began running node model.dbt_wizetrading.btc_perp_data_5m_current_and_history
+[0m16:37:57.242791 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_wizetrading.btc_perp_data_4h_current_and_history, now model.dbt_wizetrading.btc_perp_data_5m_current_and_history)
+[0m16:37:57.243792 [debug] [Thread-1  ]: Began compiling node model.dbt_wizetrading.btc_perp_data_5m_current_and_history
+[0m16:37:57.246791 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_wizetrading.btc_perp_data_5m_current_and_history"
+[0m16:37:57.248790 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m_current_and_history (compile): 16:37:57.243792 => 16:37:57.248790
+[0m16:37:57.249791 [debug] [Thread-1  ]: Began executing node model.dbt_wizetrading.btc_perp_data_5m_current_and_history
+[0m16:37:57.249791 [debug] [Thread-1  ]: Timing info for model.dbt_wizetrading.btc_perp_data_5m_current_and_history (execute): 16:37:57.249791 => 16:37:57.249791
+[0m16:37:57.251792 [debug] [Thread-1  ]: Finished running node model.dbt_wizetrading.btc_perp_data_5m_current_and_history
+[0m16:37:57.252791 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:37:57.252791 [debug] [MainThread]: Connection 'list_aoavfbel_wizetrading' was properly closed.
+[0m16:37:57.253793 [debug] [MainThread]: Connection 'model.dbt_wizetrading.btc_perp_data_5m_current_and_history' was properly closed.
+[0m16:37:57.256791 [debug] [MainThread]: Command end result
+[0m16:37:57.446759 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m16:37:57.446759 [info ] [MainThread]: Building catalog
+[0m16:37:57.451756 [debug] [ThreadPool]: Acquiring new postgres connection 'aoavfbel.information_schema'
+[0m16:37:57.459756 [debug] [ThreadPool]: Using postgres connection "aoavfbel.information_schema"
+[0m16:37:57.459756 [debug] [ThreadPool]: On aoavfbel.information_schema: BEGIN
+[0m16:37:57.460753 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:37:57.656897 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m16:37:57.657898 [debug] [ThreadPool]: Using postgres connection "aoavfbel.information_schema"
+[0m16:37:57.657898 [debug] [ThreadPool]: On aoavfbel.information_schema: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "dbt_wizetrading", "target_name": "dev", "connection_name": "aoavfbel.information_schema"} */
+
+    
+    
+
+    select
+        'aoavfbel' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_1h_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_5m_current_and_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_5m')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_4h')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_5m_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_1w_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_1h_current_and_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_4h_current_and_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('raw_data')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('raw_data_btc_perp')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perptreated_data')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_1w')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_15m_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_15m_current_and_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_15m')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_1h')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_4h_history')) or (upper(sch.nspname) = upper('wizetrading') and
+           upper(tbl.relname) = upper('btc_perp_data_1w_current_and_history')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m16:37:57.733962 [debug] [ThreadPool]: SQL status: SELECT 570 in 0.0 seconds
+[0m16:37:57.760530 [debug] [ThreadPool]: On aoavfbel.information_schema: ROLLBACK
+[0m16:37:57.782537 [debug] [ThreadPool]: On aoavfbel.information_schema: Close
+[0m16:37:57.822470 [info ] [MainThread]: Catalog written to C:\Users\alarcher\Documents\dbt\dbt_env\dbt_wizetrading\dbt-wizetrading-demo\docs\catalog.json
+[0m16:37:57.824468 [debug] [MainThread]: Command `dbt docs generate` succeeded at 16:37:57.823469 after 2.11 seconds
+[0m16:37:57.824468 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m16:37:57.824468 [debug] [MainThread]: Connection 'aoavfbel.information_schema' was properly closed.
+[0m16:37:57.825468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5537BFA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5568BDBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5540C37F0>]}
+[0m16:37:57.825468 [debug] [MainThread]: Flushing usage events

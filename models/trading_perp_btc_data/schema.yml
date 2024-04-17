@@ -63,6 +63,10 @@ models:
         description: "Nom du stream spécifique"
         tests: 
          - unique
+         - not_null
+         - accepted_values:
+            values: ['btcusd_perp@kline_4h', 'btcusd_perp@kline_5m', 'btcusd_perp@kline_1h', 'btcusd_perp@kline_1d', 'btcusd_perp@kline_15m', 'btcusd_perp@kline_1w']
+
       - name: event_type
         description: "type d evenement, peut être kline, closeline etc"
       - name: event_time
