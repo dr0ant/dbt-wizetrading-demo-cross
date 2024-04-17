@@ -190,50 +190,7 @@ models:
       - name: maker_buy_quote_asset_volume
         description: "volume acheteur maker"
 
-  - name: btc_perp_data_15m
-    description: "Filtered btc_perptreated_data for 15-minute interval"
-    materialized: table
-    columns:
-      - name: stream
-        description: "Nom du stream spécifique"
-      - name: event_type
-        description: "type d evenement, peut être kline, closeline etc"
-      - name: event_time
-        description: "timestamp unix"
-      - name: symbole_src
-        description: "symbole de lasset"
-      - name: candle_open_time
-        description: "unix timestamp de lasset à louverture de la bougie du stream"
-      - name: candle_close_time
-        description: "unix timestamp de lasset à la cloture de la bougie du stream"
-      - name: symbole
-        description: "symbole traité"
-      - name: interval
-        description: "unité de mesure de la bougie"
-      - name: first_trade_id
-        description: "id du premier trade de la bougie"
-      - name: last_trade_id
-        description: "id du dernier trade de la bougie"
-      - name: openprice
-        description: "prix de lasset à louverture de la bouhie du stream"
-      - name: close_price
-        description: "prix de lasset à la cloture de la bouhie du stream"
-      - name: high_price
-        description: "prix le plus elevé de la bougie"
-      - name: low_price
-        description: "prix le plus bas de la bougie"
-      - name: base_asset_volume
-        description: "volume de trading sur lasset sur la bougie"
-      - name: nb_trades
-        description: "nombre de trade sur la bougie"
-      - name: candle_closed
-        description: "boulean precisant si la bougie est terminée"
-      - name: quote_asset_volume
-        description: "volume final en asset"
-      - name: taker_buy_base_asset_volume
-        description: "volume acheteurntaker"
-      - name: maker_buy_quote_asset_volume
-        description: "volume acheteur maker"
+
 
   - name: btc_perp_data_1h
     description: "Filtered btc_perptreated_data for 1-hour interval"
