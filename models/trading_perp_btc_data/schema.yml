@@ -61,7 +61,8 @@ models:
     columns:
       - name: stream
         description: "Nom du stream spécifique"
-        test: not null
+        tests: 
+         - unique
       - name: event_type
         description: "type d evenement, peut être kline, closeline etc"
       - name: event_time
