@@ -7,6 +7,7 @@ final as (
     select * from source_btc_data
     where 1=1
          AND source_btc_data.interval::text = '5m'::text
+
 )
 
 select * from final
